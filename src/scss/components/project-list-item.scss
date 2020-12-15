@@ -1,0 +1,128 @@
+/* PROJECT LIST ITEM */
+.project-list {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+
+    @include lg {
+        padding-bottom: 6em;
+    }
+}
+
+.project-list-item {
+    margin-bottom: 4em;
+    position: relative;
+
+    a {
+        padding: 0;
+        text-decoration: none;
+        
+
+        &:hover {
+            color: $offwhite;
+        }
+    }
+
+    .project-list-item__img {
+        display: block;
+        max-width: none;
+        opacity: .3;
+        position: relative;
+        width: 100%;
+
+        @include lg {
+            height: 28em;
+            background-size: auto 100%;
+            background-position: center center;
+            transition: background-size .3s ease-in-out, opacity .3s ease-in-out;
+        }
+    }
+
+    &:hover {
+        .project-list-item__img {
+            background-size: auto 108%;
+            opacity: .6;
+        }
+    }
+
+    .project-list-item__text {
+        margin-top: 1em;
+        position: relative;
+        z-index: 5;
+
+        @include md {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: -11em;
+            padding: 0 0 3em;
+            position: relative;
+        }
+    }
+
+    h3, .h3 {
+        margin-bottom: .5em;
+    }
+
+    @include md {
+
+        &:nth-child(odd) {
+
+            .project-list-item__img {
+                max-width: none;
+                padding-left: 33.3333%;
+            }
+
+            .project-list-item__text {
+                margin-right: 33.3333%;
+            }
+        }
+
+        &:nth-child(even) {
+            .project-list-item__img {
+                max-width: none;
+                padding-right: 33.3333%;
+            }
+
+            .project-list-item__text {
+                margin-left: 33.3333%;
+            }
+        }
+
+        .project-list-item__img {
+            width: 100%;
+        }
+    }
+
+    @include lg {
+        margin-bottom: -6em; 
+        height: 28em;
+
+        .project-list-item__text {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .project-list-item__img {
+            position: absolute;
+            width: 18em;
+        }
+
+        &:nth-child(odd) {
+
+            .project-list-item__img {
+                right: 0;
+                padding: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            margin-top: 8em;
+
+            .project-list-item__img {
+                padding: 0;
+            }
+        }
+    }
+}

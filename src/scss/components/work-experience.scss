@@ -1,0 +1,34 @@
+/* WORK EXPERIENCE */
+.work-experience .row {
+    margin: auto;
+}
+
+.work-experience-item {
+    border-bottom: 1px solid rgba($gray, .2);
+    padding: 3em 0;
+}
+
+.work-experience-meta {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 2em;
+}
+
+.work-experience__img {
+    margin-right: 1em;
+    max-width: 88px;
+}
+
+.work-experience__ul {
+    padding: 0 15px;
+    margin-bottom: 0;
+}
+
+.work-experience__li {
+    margin-bottom: .5em;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

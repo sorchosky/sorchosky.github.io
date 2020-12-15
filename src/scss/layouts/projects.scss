@@ -1,0 +1,14 @@
+/* PROJECTS */
+.card-columns-2 {
+
+    @include md {
+        column-count: 2;
+    }
+}
+
+.card-columns-3 {
+
+    @include md {
+        column-count: 3;
+    }
+}

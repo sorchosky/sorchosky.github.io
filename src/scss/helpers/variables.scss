@@ -1,0 +1,36 @@
+// Colors
+$black:       #192138;
+$gray:        #949189;
+$offwhite:    #F1EBDC;
+
+$accent:      #0358DA;
+$accentlight: #027DEF;
+$accentdark:  #042C93;
+
+$trueblack:   #050E27;
+$truewhite:   #fff;
+
+// Links
+$link-color: $offwhite;
+$link-hover-color: $accent;
+
+// Button Colors
+$primary: $accent;
+$secondary: $offwhite;
+
+// Font Families
+$serif: 'DM Serif Display', Georgia, 'Times New Roman', Times, serif;
+$sans-serif: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// Main Variable Overrides
+$body-bg: $black;
+$body-color: $offwhite;
+
+// Typography Variables Overrides
+$font-family-base: $sans-serif;
+$input-font-family: $sans-serif;
+
+$headings-font-family: $serif;
+$headings-color: $offwhite;
+
+// Link Variable Overrides

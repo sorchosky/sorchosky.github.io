@@ -1,0 +1,33 @@
+// HELPERS
+@import 'helpers/variables.scss';
+@import 'helpers/fonts.scss';
+@import 'helpers/mixins.scss';
+
+// BOOTSTRAP VARIABLES
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+/***********
+CUSTOM CODE
+***********/
+
+/* ---- HELPERS ---- */
+@import 'helpers/utilities.scss';
+
+/* ---- COMPONENTS ---- */
+@import 'components/fader.scss';
+@import 'components/typography.scss';
+@import 'components/buttons.scss';
+@import 'components/media.scss';
+@import 'components/header.scss';
+// @import 'components/full-nav.scss';
+@import 'components/jumbotron.scss';
+@import 'components/cards.scss';
+@import 'components/prev-next.scss';
+@import 'components/footer.scss';
+@import 'components/project-list-item.scss';
+@import 'components/work-experience.scss';
+
+/* ---- LAYOUTS ---- */
+@import 'layouts/global.scss';
+@import 'layouts/projects.scss';
