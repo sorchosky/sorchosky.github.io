@@ -73,3 +73,17 @@ p, .p {
 }
 
 // Other Styles
+
+blockquote {
+    font-family: $serif;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.3333;
+}
+
+figcaption {
+    color: $gray;
+    font-size: .875em;
+    margin: .5em 0 0;
+    text-align: center;
+}

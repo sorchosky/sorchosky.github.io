@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap");
 /***********
 CUSTOM CODE
 ***********/
@@ -123,6 +123,18 @@ p, .p {
 
 .text-shadow {
   text-shadow: 0 4px 4px rgba(25, 33, 56, 0.5); }
+
+blockquote {
+  font-family: "DM Serif Display", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 1.5em;
+  line-height: 1.3333; }
+
+figcaption {
+  color: #949189;
+  font-size: .875em;
+  margin: .5em 0 0;
+  text-align: center; }
 
 /* BUTTONS */
 a {

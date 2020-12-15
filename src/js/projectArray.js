@@ -35,6 +35,14 @@ const projects = [
         description: 'Website design for the leading playing card company in the United States',
         url: './uspc.html'
     },
+    {
+        projectId: 'kst',
+        title: 'Kelly Strayhorn Theater',
+        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
+        description: 'User-Centered Research and Evaluation Final Project',
+        url: './kelly-strayhorn.html'
+    },
     // {
     //     projectId: 'braxton',
     //     title: 'Braxton Brewing Co.',
