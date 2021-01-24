@@ -230,6 +230,7 @@ let prevNextProjects = () => {
     let miniNav = document.getElementById('mini-nav');
     miniNav.innerHTML = `
     <a href="`+ prevProject.url +`"><p class="col-12 text-left eyebrow prev-next-label prev-label">`+ prevProject.title +`</p></a>
+    <a href=""><p class="text-center">READ MORE</p></a>
     <a href="`+ nextProject.url +`"><p class="col-12 text-right eyebrow prev-next-label next-label">`+ nextProject.title +`</p></a>
     `
 }
@@ -238,14 +239,6 @@ let prevNextProjects = () => {
 
 // PROJECT ARRAY
 const projects = [
-    // {
-    //     projectId: 'blue222',
-    //     title: 'Blue222',
-    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
-    //     description: 'Wordpress website design for an innovative real estate inspection service',
-    //     url: './blue222.html'
-    // },
     {
         projectId: 'tempur-pedic',
         title: 'Tempur-Pedic',
@@ -285,7 +278,15 @@ const projects = [
     //     desktopImg: 'img/thumbnails/braxton-thumb@2x.jpg',
     //     description: 'Wordpress website for a craft brewery in Covington, KY',
     //     url: './braxton-brewing.html'
-    // }
+    // },
+    // {
+    //     projectId: 'blue222',
+    //     title: 'Blue222',
+    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
+    //     description: 'Wordpress website design for an innovative real estate inspection service',
+    //     url: './blue222.html'
+    // },
 ];
 'use strict';
 // projectLoop.js

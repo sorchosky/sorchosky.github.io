@@ -1,8 +1,39 @@
 /* FULL-NAV */
 .full-nav {
+    align-items: center;
     background-color: $black;
-    height: 100vh;
-    // visibility: hidden;
+    height: calc(100vh - 64px);
+    position: relative;
     width: 100%;
     z-index: 100;
+
+    .navbar-nav {
+        align-items: center;
+        display: flex;
+        height:calc(100vh - 64px);
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        
+    }
+
+    a.nav-link {
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.full-nav__social {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    a {
+        margin: 0 auto 1em;
+    }
+}
+
+.navbar-social {
+    text-align: center;
 }
