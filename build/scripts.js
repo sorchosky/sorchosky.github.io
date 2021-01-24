@@ -247,20 +247,20 @@ const projects = [
     //     url: './blue222.html'
     // },
     {
-        projectId: 'usb',
-        title: 'Union Savings Bank',
-        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-        description: 'Website design for leading mortgage and lending banks in OH and KY',
-        url: './usb.html'
-    },
-    {
         projectId: 'tempur-pedic',
         title: 'Tempur-Pedic',
         mobileImg: 'img/thumbnails/tempur-pedic-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/tempur-pedic-thumb@2x.jpg',
         description: 'Customizable and readymade landing page design system for mattress retailers',
         url: './tempur-pedic.html'
+    },
+    {
+        projectId: 'usb',
+        title: 'Union Savings Bank',
+        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
+        description: 'Website design for leading mortgage and lending banks in OH and KY',
+        url: './usb.html'
     },
     {
         projectId: 'uspc',
