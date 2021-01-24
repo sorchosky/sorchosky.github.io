@@ -75,11 +75,16 @@
     }
 
     a.nav-link {
+        opacity: 1;
         text-align: center;
         text-decoration: none;
 
         @include lg {
             text-align: left;
+        }
+
+        &:hover {
+            color: $blue;
         }
     }
 }

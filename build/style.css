@@ -233,11 +233,14 @@ header .navbar-toggler {
         padding: 0 0 0 4em;
         width: 50%; } }
   .full-nav a.nav-link {
+    opacity: 1;
     text-align: center;
     text-decoration: none; }
     @media (min-width: 991.98px) {
       .full-nav a.nav-link {
         text-align: left; } }
+    .full-nav a.nav-link:hover {
+      color: #007bff; }
 
 .full-nav__social {
   bottom: 0;
