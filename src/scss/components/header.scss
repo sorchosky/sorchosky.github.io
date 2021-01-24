@@ -3,4 +3,8 @@ header {
     nav {
         background-color: $black;
     }
+    .navbar-brand,
+    .navbar-toggler {
+        z-index: 120;
+    }
 }

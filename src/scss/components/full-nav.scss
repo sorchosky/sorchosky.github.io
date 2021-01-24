@@ -2,24 +2,85 @@
 .full-nav {
     align-items: center;
     background-color: $black;
-    height: calc(100vh - 64px);
-    position: relative;
+    display: flex;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
     z-index: 100;
+
+    .full-nav__projects {
+        display: none;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 50%;
+
+        @include lg {
+            display: flex;
+        }
+    }
+
+    .full-nav__project--featured {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .full-nav__project--nonfeatured {
+        height: 50vh;
+        width: 50%;
+    }
+
+    .full-nav__project {
+        background-position: center;
+        background-size: auto 100%;
+        display: block;
+        position: relative;
+        transition: background-size .3s ease-in-out;
+
+        &:hover {
+            background-size: auto 108%;
+        }
+    }
+
+    .project-text {
+        bottom: 0em;
+        position: absolute;
+        left: 2em;
+    }
+
+    .full-nav--right {
+        width: 100%;
+
+        @include lg {
+            width: 50%;
+        }
+    }
 
     .navbar-nav {
         align-items: center;
         display: flex;
-        height:calc(100vh - 64px);
+        height: 100vh;
         justify-content: center;
-        position: absolute;
+        position: relative;
         width: 100%;
+
+        @include lg {
+            align-items: start;
+            padding: 0 0 0 4em;
+            width: 50%;
+        }
         
     }
 
     a.nav-link {
         text-align: center;
         text-decoration: none;
+
+        @include lg {
+            text-align: left;
+        }
     }
 }
 
@@ -29,12 +90,30 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
+
+    @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2em 2.5em 4em;
+        position: relative;
+        width: 100%;
+    }
     
     a {
         margin: 0 auto 1em;
+
+        @include lg {
+            margin: 0;
+        }
     }
 }
 
 .navbar-social {
     text-align: center;
 }
+
+// .collapsing {
+//     -webkit-transition: none;
+//     transition: none;
+//     display: none;
+// }
