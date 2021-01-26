@@ -3,9 +3,14 @@
 @import 'helpers/fonts.scss';
 @import 'helpers/mixins.scss';
 
+// VENDOR
 // BOOTSTRAP VARIABLES
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+
+// HAMBURGER MENU
+$hamburger-layer-color: $offwhite;
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 /***********
 CUSTOM CODE

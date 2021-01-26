@@ -1,4 +1,9 @@
+.hamburger {
+    z-index: 120;
+}
+
 /* FULL-NAV */
+
 .full-nav {
     align-items: center;
     background-color: $black;
@@ -41,6 +46,10 @@
 
         &:hover {
             background-size: auto 108%;
+
+            p {
+                color: $offwhite;
+            }
         }
     }
 
@@ -71,54 +80,62 @@
             padding: 0 0 0 4em;
             width: 50%;
         }
+
+        a.nav-link {
+            color: $offwhite;
+            opacity: 1;
+            text-align: center;
+            text-decoration: none;
+    
+            @include lg {
+                text-align: left;
+            }
+    
+            &:hover {
+                color: $blue;
+            }
+        }
         
     }
 
-    a.nav-link {
-        opacity: 1;
-        text-align: center;
-        text-decoration: none;
-
-        @include lg {
-            text-align: left;
-        }
-
-        &:hover {
-            color: $blue;
-        }
-    }
-}
-
-.full-nav__social {
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-
-    @include lg {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 2em 2.5em 4em;
-        position: relative;
+    .full-nav__social {
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
         width: 100%;
+    
+        @include lg {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 2em 2.5em 4em;
+            position: relative;
+            width: 100%;
+        }
+        
+        a {
+            margin: 0 auto 1em;
+    
+            @include lg {
+                margin: 0;
+            }
+        }
     }
     
-    a {
-        margin: 0 auto 1em;
-
-        @include lg {
-            margin: 0;
-        }
+    .navbar-social {
+        text-align: center;
     }
 }
 
-.navbar-social {
-    text-align: center;
+// Toggle classes
+.full-nav {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
-// .collapsing {
-//     -webkit-transition: none;
-//     transition: none;
-//     display: none;
-// }
+.full-nav.active {
+    opacity: 1;
+    height: 100vh;
+}
