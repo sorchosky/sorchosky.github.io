@@ -255,12 +255,12 @@ const projects = [
         url: './tempur-pedic.html'
     },
     {
-        projectId: 'usb',
-        title: 'Union Savings Bank',
-        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-        description: 'Website design for leading mortgage and lending banks in OH and KY',
-        url: './usb.html'
+        projectId: 'kst',
+        title: 'Kelly Strayhorn Theater',
+        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
+        description: 'User-Centered Research and Evaluation Final Project',
+        url: './kelly-strayhorn.html'
     },
     {
         projectId: 'uspc',
@@ -271,12 +271,12 @@ const projects = [
         url: './uspc.html'
     },
     {
-        projectId: 'kst',
-        title: 'Kelly Strayhorn Theater',
-        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
-        description: 'User-Centered Research and Evaluation Final Project',
-        url: './kelly-strayhorn.html'
+        projectId: 'usb',
+        title: 'Union Savings Bank',
+        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
+        description: 'Website design for leading mortgage and lending banks in OH and KY',
+        url: './usb.html'
     },
     // {
     //     projectId: 'braxton',
@@ -326,6 +326,28 @@ let projectLoop = () => {
         // append to #projectList
         projectList.appendChild(projectListItem);
     }
+}
+'use strict';
+// projectLoopMenu.js
+
+// PROJECT LOOP MENU
+const projectLoopMenu = document.getElementById("projectLoopMenu");
+let i;
+for (i = 0; i < 3; i++) {
+    let projectLoopMenuItem = document.createElement("a");
+    projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].mobileImg + "')"
+    projectLoopMenuItem.classList = "full-nav__project";
+    if (i == 0) {
+        projectLoopMenuItem.classList.add("full-nav__project--featured");
+    } else {
+        projectLoopMenuItem.classList.add("full-nav__project--nonfeatured");
+    }
+    projectLoopMenuItem.innerHTML = `
+    <div class="project-text">
+        <p>` + projects[i].title + `</p>
+    </div>
+    `
+    projectLoopMenu.appendChild(projectLoopMenuItem);
 }
 // scrollRevealFunctions.js
 

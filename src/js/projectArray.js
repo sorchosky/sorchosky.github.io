@@ -12,12 +12,12 @@ const projects = [
         url: './tempur-pedic.html'
     },
     {
-        projectId: 'usb',
-        title: 'Union Savings Bank',
-        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-        description: 'Website design for leading mortgage and lending banks in OH and KY',
-        url: './usb.html'
+        projectId: 'kst',
+        title: 'Kelly Strayhorn Theater',
+        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
+        description: 'User-Centered Research and Evaluation Final Project',
+        url: './kelly-strayhorn.html'
     },
     {
         projectId: 'uspc',
@@ -28,12 +28,12 @@ const projects = [
         url: './uspc.html'
     },
     {
-        projectId: 'kst',
-        title: 'Kelly Strayhorn Theater',
-        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
-        description: 'User-Centered Research and Evaluation Final Project',
-        url: './kelly-strayhorn.html'
+        projectId: 'usb',
+        title: 'Union Savings Bank',
+        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
+        description: 'Website design for leading mortgage and lending banks in OH and KY',
+        url: './usb.html'
     },
     // {
     //     projectId: 'braxton',
