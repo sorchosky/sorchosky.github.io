@@ -79,15 +79,18 @@ let prevNextProjects = () => {
     prevNextProjectsDiv.appendChild(nextProjectDiv);
 
     console.log('Project length: ' + projects.length);
-
-    // ######################
-    // Render project displays
-    // ######################
-
-    let miniNav = document.getElementById('mini-nav');
-    miniNav.innerHTML = `
-    <a href="`+ prevProject.url +`"><p class="col-12 text-left eyebrow prev-next-label prev-label">`+ prevProject.title +`</p></a>
-    <a href=""><p class="text-center">READ MORE</p></a>
-    <a href="`+ nextProject.url +`"><p class="col-12 text-right eyebrow prev-next-label next-label">`+ nextProject.title +`</p></a>
-    `
 }
+
+// ######################
+// Render project displays
+// ######################
+
+// let miniNavRender = () => {
+
+//     let miniNav = document.getElementById('mini-nav');
+//     miniNav.innerHTML = `
+//     <a href="`+ prevProject.url +`"><p class="col-12 text-left eyebrow prev-next-label prev-label">`+ prevProject.title +`</p></a>
+//     <a href=""><p class="text-center">READ MORE</p></a>
+//     <a href="`+ nextProject.url +`"><p class="col-12 text-right eyebrow prev-next-label next-label">`+ nextProject.title +`</p></a>
+//     `
+// }

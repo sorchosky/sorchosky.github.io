@@ -805,8 +805,7 @@ h4, h5, h6 {
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 .lead {
-  font-size: 1.5em;
-  text-align: center; }
+  font-size: 1.5em; }
 
 .eyebrow {
   color: #F1EBDC;
@@ -991,8 +990,17 @@ header .navbar-toggler {
   display: flex;
   height: 100vh;
   justify-content: center;
-  margin-top: 0 !important;
+  margin-top: 0;
   position: relative; }
+
+.project-page .jumbotron {
+  height: auto;
+  justify-content: flex-start;
+  margin: 6em 0 2em; }
+  @media (min-width: 767.98px) {
+    .project-page .jumbotron {
+      max-height: 50vh;
+      height: 50vw; } }
 
 .jumbotron__text {
   display: block;
@@ -1016,6 +1024,10 @@ header .navbar-toggler {
 .card {
   border: none;
   border-radius: 0; }
+
+.callout {
+  background-color: #050E27;
+  padding: 1em; }
 
 /* PREV-NEXT */
 .prev-next {

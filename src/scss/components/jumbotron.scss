@@ -4,8 +4,19 @@
     display: flex;
     height: 100vh;
     justify-content: center;
-    margin-top: 0 !important;
+    margin-top: 0;
     position: relative;
+}
+
+.project-page .jumbotron {
+    height: auto;
+    justify-content: flex-start;
+    margin: 6em 0 2em;
+
+    @include md {
+        max-height: 50vh;
+        height: 50vw;
+    }
 }
 
 .jumbotron__text {
