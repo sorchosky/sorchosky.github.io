@@ -79,18 +79,22 @@ let prevNextProjects = () => {
     prevNextProjectsDiv.appendChild(nextProjectDiv);
 
     console.log('Project length: ' + projects.length);
+
+    // ##########################
+    // Mini Nav for Process Pages
+    // ##########################
+
+    let miniNav = document.getElementById('mini-nav');
+
+    let miniNavRender = () => {
+        miniNav.innerHTML = `
+        <a href="`+ prevProject.url +`"><p class="col-12 text-left eyebrow prev-next-label prev-label">`+ prevProject.title +`</p></a>
+        <a href=""><p class="text-center">READ MORE</p></a>
+        <a href="`+ nextProject.url +`"><p class="col-12 text-right eyebrow prev-next-label next-label">`+ nextProject.title +`</p></a>
+        `
+    }
+    // If there's a mini nav, render it
+    if (miniNav != null) {
+        miniNavRender();
+    }
 }
-
-// ######################
-// Render project displays
-// ######################
-
-// let miniNavRender = () => {
-
-//     let miniNav = document.getElementById('mini-nav');
-//     miniNav.innerHTML = `
-//     <a href="`+ prevProject.url +`"><p class="col-12 text-left eyebrow prev-next-label prev-label">`+ prevProject.title +`</p></a>
-//     <a href=""><p class="text-center">READ MORE</p></a>
-//     <a href="`+ nextProject.url +`"><p class="col-12 text-right eyebrow prev-next-label next-label">`+ nextProject.title +`</p></a>
-//     `
-// }
