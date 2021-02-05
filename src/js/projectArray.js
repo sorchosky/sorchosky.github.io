@@ -12,14 +12,6 @@ const projects = [
         url: './tempur-pedic.html'
     },
     {
-        projectId: 'kst',
-        title: 'Kelly Strayhorn Theater',
-        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
-        description: 'User-Centered Research and Evaluation Final Project',
-        url: './kelly-strayhorn.html'
-    },
-    {
         projectId: 'uspc',
         title: 'U.S. Playing Card',
         mobileImg: 'img/thumbnails/uspc-thumb--mobile@2x.jpg',
@@ -28,20 +20,28 @@ const projects = [
         url: './uspc.html'
     },
     {
-        projectId: 'usb',
-        title: 'Union Savings Bank',
+        projectId: 'kst',
+        title: 'Kelly Strayhorn Theater',
+        mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
+        description: 'User-Centered Research and Evaluation Final Project',
+        url: './kelly-strayhorn.html'
+    },
+    {
+        projectId: 'gsb',
+        title: 'Guardian Savings Bank',
         mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
         description: 'Website design for leading mortgage and lending banks in OH and KY',
-        url: './usb.html'
+        url: './gsb.html'
     },
     // {
-    //     projectId: 'braxton',
-    //     title: 'Braxton Brewing Co.',
-    //     mobileImg: 'img/thumbnails/braxton-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/braxton-thumb@2x.jpg',
-    //     description: 'Wordpress website for a craft brewery in Covington, KY',
-    //     url: './braxton-brewing.html'
+    //     projectId: 'raynor',
+    //     title: 'Raynor Gaming',
+    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
+    //     description: 'Wordpress ecommerce website for competitive gaming chairs,
+    //     url: './raynor.html'
     // },
     // {
     //     projectId: 'blue222',
