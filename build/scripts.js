@@ -344,6 +344,7 @@ for (i = 0; i < 3; i++) {
     let projectLoopMenuItem = document.createElement("a");
     projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].mobileImg + "')"
     projectLoopMenuItem.classList = "full-nav__project";
+    projectLoopMenuItem.setAttribute("href", projects[i].url);
     if (i == 0) {
         projectLoopMenuItem.classList.add("full-nav__project--featured");
     } else {
