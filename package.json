@@ -9,7 +9,7 @@
   "author": "Steve Orchosky",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^4.6.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cli": "^2.3.0",
