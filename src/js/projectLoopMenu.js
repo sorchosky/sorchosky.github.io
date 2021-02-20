@@ -1,4 +1,3 @@
-'use strict';
 // projectLoopMenu.js
 
 // PROJECT LOOP MENU

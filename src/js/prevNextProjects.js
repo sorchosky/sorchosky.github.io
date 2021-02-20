@@ -1,4 +1,3 @@
-'use strict';
 // prevNextProjects.js
 
 // PROJECT LOOP

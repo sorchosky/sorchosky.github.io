@@ -1,4 +1,3 @@
-'use strict';
 // jobLoop.js
 
 let workExperience = document.getElementById('workExperience');

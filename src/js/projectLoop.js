@@ -1,4 +1,3 @@
-'use strict';
 // projectLoop.js
 
 // PROJECT LOOP
