@@ -294,28 +294,28 @@ const projects = [
         url: './usb.html',
         processUrl: null
     },
-    {
-        projectId: 'raynor',
-        title: 'Raynor Gaming',
-        mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
-        projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
-        processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
-        description: 'Ecommerce website for professional gaming chairs',
-        url: './raynor.html',
-        processUrl: null
-    },
-    {
-        projectId: 'blue222',
-        title: 'Blue222',
-        mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
-        projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
-        processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
-        description: 'Wordpress website design & development',
-        url: './blue222.html',
-        processUrl: null
-    },
+    // {
+    //     projectId: 'raynor',
+    //     title: 'Raynor Gaming',
+    //     mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
+    //     processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
+    //     description: 'Ecommerce website for professional gaming chairs',
+    //     url: './raynor.html',
+    //     processUrl: null
+    // },
+    // {
+    //     projectId: 'blue222',
+    //     title: 'Blue222',
+    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
+    //     processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
+    //     description: 'Wordpress website design & development',
+    //     url: './blue222.html',
+    //     processUrl: null
+    // },
 ];
 // projectLoop.js
 
@@ -355,13 +355,14 @@ const projectLoopMenu = document.getElementById("projectLoopMenu");
 let i;
 for (i = 0; i < 3; i++) {
     let projectLoopMenuItem = document.createElement("a");
-    projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].mobileImg + "')"
     projectLoopMenuItem.classList = "full-nav__project";
     projectLoopMenuItem.setAttribute("href", projects[i].url);
     if (i == 0) {
         projectLoopMenuItem.classList.add("full-nav__project--featured");
+        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].projectCoverImg + "')";
     } else {
         projectLoopMenuItem.classList.add("full-nav__project--nonfeatured");
+        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].processCoverImg + "')";
     }
     projectLoopMenuItem.innerHTML = `
     <div class="project-text">

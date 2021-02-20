@@ -12,3 +12,24 @@
         column-count: 3;
     }
 }
+
+// Full Team list styles
+.full-team__ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.full-team__li {
+    margin: 0 0 1em;
+}
+
+.full-team__p {
+    margin: 0;
+}
+
+.full-team__h6 {
+    color: $gray;
+    font-size: .75em;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}

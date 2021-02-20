@@ -837,7 +837,7 @@ blockquote {
   line-height: 1.3333; }
 
 figcaption {
-  color: #949189;
+  color: #979EB4;
   font-size: .875em;
   margin: .5em 0 0;
   text-align: center; }
@@ -1187,7 +1187,7 @@ footer {
   margin: auto; }
 
 .work-experience-item {
-  border-bottom: 1px solid rgba(148, 145, 137, 0.2);
+  border-bottom: 1px solid rgba(151, 158, 180, 0.2);
   padding: 3em 0; }
 
 .work-experience-meta {
@@ -1230,5 +1230,21 @@ section.row {
   .card-columns-3 {
     -moz-column-count: 3;
     column-count: 3; } }
+
+.full-team__ul {
+  padding: 0;
+  list-style-type: none; }
+
+.full-team__li {
+  margin: 0 0 1em; }
+
+.full-team__p {
+  margin: 0; }
+
+.full-team__h6 {
+  color: #979EB4;
+  font-size: .75em;
+  letter-spacing: .08em;
+  text-transform: uppercase; }
 
 /* PROCESS */
