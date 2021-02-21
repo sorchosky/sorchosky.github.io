@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Orchosky | Kelly Strayhorn Theater</title>
+    <title>Steve Orchosky | Tempur-Pedic Process</title>
 
     <!-- Vendor -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body onload="prevNextProjects(); fadeInPage()" id="kst" class="process-page">
+<body onload="prevNextProjects(); fadeInPage();" id="tempur-pedic" class="process-page">
     <svg id="fader"></svg>
     <header>
         <nav class="navbar navbar-dark fixed-top">
@@ -21,18 +21,73 @@
                 <h4>Steve Orchosky</h4>
             </a>
 
+            <button id="navbarToggle" class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+             <!-- Full Nav -->
+            <div class="full-nav" id="fullNav">
+
+                <!-- Nav Left (Projects) -->
+                <div class="full-nav__projects" id="projectLoopMenu">
+                    
+                </div>
+
+                <!-- Nav Right -->
+                <div class="full-nav--right">
+                    <!-- Nav Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <h2><a class="nav-link" href="index.html">Home</a></h2>
+                        </li>
+                        <li class="nav-item">
+                            <h2><a class="nav-link" href="about.html">About</a></h2>
+                        </li>
+                        <li class="nav-item">
+                            <h2><a class="nav-link" href="projects.html">Projects</a></h2>
+                        </li>
+                    </ul>
+
+                    <!-- Social Links -->
+                    <div class="full-nav__social">
+                        <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a>
+                        <ul class="list-inline navbar-social">
+                            <li class="list-inline-item">
+                                <a class="social-icon" href="https://www.linkedin.com/in/steve-orchosky/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon" href="https://dribbble.com/sorchosky" target="_blank">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon" href="https://www.instagram.com/sorchosky/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </nav>
     </header>
 
     <main class="container">
         <!-- Cover -->
-        <div class="row jumbotron">
+        <div class="jumbotron">
             <div id="mini-nav"></div>
+
             <div class="jumbotron__text">
-                <h1 class="h1 jumbotron__h1">Kelly Strayhorn Theater</h1>
-                <p class="lead">User-Centered Research &amp; Evaluation</p>
+                <h6 class="jumbotron__h6 text-center">Full Process</h6>
+                <h1 class="h1 jumbotron__h1 text-center">Kelly Strayhorn Theater</h1>
+                <p class="lead text-center">User-Centered Research & Evaluation</p>
             </div>
-            <img class="jumbotron__img" src="img/project--kelly-strayhorn/kelly-strayhorn--cover.png" alt="US Playing Card Cover Image">
+            <img class="jumbotron__img" src="./img/process/kst/kst--process-cover@2x.jpg" alt="Tempur-Pedic Cover Image">
         </div>
 
         <!-- About the Project -->
@@ -271,57 +326,57 @@
 
     </main>
 
-    <!-- Footer -->
+   <!-- Footer -->
+   <div class="container">
+    <div class="row">
+        <h2 class="col-12">Let&rsquo;s work together</h2>
+        <p class="col-12 col-lg-8 offset-lg-2">I&rsquo;m currently looking for fulltime and contract opportunities upon graduating from my Master&rsquo;s of Human-Computer Interaction from Carnegie Mellon. Please reach out to me at <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a> to discuss projects, or just to say hello.</p>
+    </div>
+</div>
+
+<footer>
     <div class="container">
         <div class="row">
-            <h2 class="col-12">Let&rsquo;s work together</h2>
-            <p class="col-12 col-lg-8 offset-lg-2">I&rsquo;m currently looking for fulltime and contract opportunities upon graduating from my Master&rsquo;s of Human-Computer Interaction from Carnegie Mellon. Please reach out to me at <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a> to discuss projects, or just to say hello.</p>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-5">
-                    <a href="./" class="footer-brand">
-                        <h4>Steve Orchosky</h4>
-                    </a>
-                    <p>Interaction Designer &amp; Digital Strategist</p>
-                </div>
-                <div class="col-12 col-sm-8 col-lg-4">
-                    <h4>Contact</h4>
-                    <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a>
-                </div>
-                <div class="col-12 col-sm-4 col-lg-3">
-                    <h4>Social</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="social-icon" href="https://www.linkedin.com/in/steve-orchosky/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-icon" href="https://dribbble.com/sorchosky" target="_blank">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-icon" href="https://www.instagram.com/sorchosky/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-12 col-sm-12 col-lg-5">
+                <a href="./" class="footer-brand">
+                    <h4>Steve Orchosky</h4>
+                </a>
+                <p>Interaction Designer &amp; Digital Strategist</p>
+            </div>
+            <div class="col-12 col-sm-8 col-lg-4">
+                <h4>Contact</h4>
+                <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3">
+                <h4>Social</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="https://www.linkedin.com/in/steve-orchosky/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="https://dribbble.com/sorchosky" target="_blank">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="https://www.instagram.com/sorchosky/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Javascript -->
-    <!-- Vendor Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Custom Script -->
-    <script src="scripts.js"></script>
+<!-- Javascript -->
+<!-- Vendor Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Custom Script -->
+<script src="./scripts.js"></script>
 </body>
 </html>

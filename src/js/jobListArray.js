@@ -18,7 +18,7 @@ const jobList = [
         img: 'img/professional-experience/lisnr.png',
         title: 'Designer',
         company: 'LISNR',
-        dates: 'JAN 2017–MAR 2020',
+        dates: 'JAN 2017–MAR 2017',
         description: [
             'Design email templates, web pages, white page & documentation PDFs, online publications, social media graphics, infographics and storyboards',
             'Create print collateral for trade shows to generate new business leads and investors',
