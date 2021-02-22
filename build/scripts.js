@@ -188,7 +188,6 @@ let prevNextProjects = () => {
 
     let prevNextProjectsDiv = document.getElementById('prevNextProjects');
 
-    let thisProject = projects[thisProjectIndex];
     let prevProject = projects[prevProjectIndex];
     let nextProject = projects[nextProjectIndex];
 
@@ -229,10 +228,22 @@ let prevNextProjects = () => {
     prevNextProjectsDiv.appendChild(nextProjectDiv);
 
     console.log('Project length: ' + projects.length);
+}
 
-    // ##########################
-    // Mini Nav for Process Pages
-    // ##########################
+// ##########################
+// Process Pages
+// ##########################
+
+function miniNav() {
+    // get id from page
+    let body = document.getElementsByTagName('body')[0];
+    let pageProjectId = body.id;
+    console.log('Page ID: ' + pageProjectId)
+    // get corresponding number from projects
+    let thisProjectObject = projects.find(project => project.projectId === pageProjectId);
+    // This project's index
+    let thisProjectIndex = projects.indexOf(thisProjectObject);
+    console.log('This project Index: ' + thisProjectIndex);
 
     let miniNav = document.getElementById('mini-nav');
 
@@ -249,18 +260,14 @@ let prevNextProjects = () => {
     };
 
     // Render the miniNav
-    function miniNavRender() {
+    miniNav.innerHTML = `
+    <a href="` + projects[thisProjectIndex].url + `"><p class="text-left eyebrow prev-next-label prev-label">Project Cover</p></a>
+    <a href="` + nextProcess.processUrl + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
+    `;
+}
 
-        miniNav.innerHTML = `
-        <a href="` + thisProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">Project Cover</p></a>
-        <a href="` + nextProcess.processUrl + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
-        `;
-    }
-    
-    // If there's a mini nav, render it
-    if (miniNav != null) {
-        miniNavRender();
-    }
+function nextProcess() {
+    console.log("Testing nextProcess");
 }
 // projectArray.js
 
@@ -310,28 +317,28 @@ const projects = [
         url: './usb.html',
         processUrl: null
     },
-    // {
-    //     projectId: 'raynor',
-    //     title: 'Raynor Gaming',
-    //     mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
-    //     processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
-    //     description: 'Ecommerce website for professional gaming chairs',
-    //     url: './raynor.html',
-    //     processUrl: null
-    // },
-    // {
-    //     projectId: 'blue222',
-    //     title: 'Blue222',
-    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
-    //     processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
-    //     description: 'Wordpress website design & development',
-    //     url: './blue222.html',
-    //     processUrl: null
-    // },
+    {
+        projectId: 'raynor',
+        title: 'Raynor Gaming',
+        mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
+        projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
+        processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
+        description: 'Ecommerce website for professional gaming chairs',
+        url: './raynor.html',
+        processUrl: null
+    },
+    {
+        projectId: 'blue222',
+        title: 'Blue222',
+        mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
+        projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
+        processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
+        description: 'Wordpress website design & development',
+        url: './blue222.html',
+        processUrl: null
+    },
 ];
 // projectLoop.js
 
