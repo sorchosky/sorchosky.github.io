@@ -188,8 +188,11 @@ let prevNextProjects = () => {
 
     let prevNextProjectsDiv = document.getElementById('prevNextProjects');
 
-    // Previous project
+    let thisProject = projects[thisProjectIndex];
     let prevProject = projects[prevProjectIndex];
+    let nextProject = projects[nextProjectIndex];
+
+    // Previous project
     let prevProjectDiv = document.createElement('div');
     prevProjectDiv.classList = "project-list-item d-block col-12 d-md-flex col-lg-6";
     prevProjectDiv.innerHTML = `
@@ -208,7 +211,6 @@ let prevNextProjects = () => {
     prevNextProjectsDiv.appendChild(prevProjectDiv);
 
     // Next project
-    let nextProject = projects[nextProjectIndex];
     let nextProjectDiv = document.createElement('div');
     nextProjectDiv.classList = "project-list-item d-block col-12 d-md-flex col-lg-6";
     nextProjectDiv.innerHTML = `
@@ -234,13 +236,27 @@ let prevNextProjects = () => {
 
     let miniNav = document.getElementById('mini-nav');
 
-    let miniNavRender = () => {
+    // Get next project with a process book link:
+    let processCounter = thisProjectIndex + 1;
+    let nextProcess;
+    console.log('processCounter: ' + processCounter);
+    while (projects[processCounter].processUrl == null) {
+        processCounter++;
+        if (processCounter == projects.length) {
+            processCounter = 0;
+        }
+        nextProcess = projects[processCounter];
+    };
+
+    // Render the miniNav
+    function miniNavRender() {
+
         miniNav.innerHTML = `
-        <a href="`+ prevProject.url +`"><p class="col-12 text-left eyebrow prev-next-label prev-label">`+ prevProject.title +`</p></a>
-        <a href=""><p class="text-center">READ MORE</p></a>
-        <a href="`+ nextProject.url +`"><p class="col-12 text-right eyebrow prev-next-label next-label">`+ nextProject.title +`</p></a>
-        `
+        <a href="` + thisProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">Project Cover</p></a>
+        <a href="` + nextProcess.processUrl + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
+        `;
     }
+    
     // If there's a mini nav, render it
     if (miniNav != null) {
         miniNavRender();
@@ -281,7 +297,7 @@ const projects = [
         processCoverImg: 'img/process/kst/kst--process-cover.jpg',
         description: 'Final project for User-Centered Research & Evaluation',
         url: './kelly-strayhorn.html',
-        processUrl: null
+        processUrl: './kelly-strayhorn-process.html'
     },
     {
         projectId: 'usb',

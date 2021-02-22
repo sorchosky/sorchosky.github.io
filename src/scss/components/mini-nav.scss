@@ -1,0 +1,58 @@
+#mini-nav {
+    align-items: center;
+    bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: calc(100vw - 2em);
+
+    a {
+        padding: 1em;
+        margin: 0;
+        text-decoration: none;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .prev-label:before,
+    .next-label:after {
+        transition: margin .2s ease-in-out;
+    }
+
+    .prev-label,
+    .next-label {
+        transition: color .2s ease-in-out;
+    }
+
+    .prev-label:hover {
+        &:before {
+            margin-right: .875em;
+        }
+    }
+
+    .next-label:hover {
+        &:after {
+            margin-left: .875em;
+        }
+    }
+}
+
+.readmore {
+    bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-items: space-around;
+    margin: auto;
+    position: absolute;
+
+    #readmore {
+        text-decoration: none;
+        margin: auto;
+    }
+
+    .eyebrow:before {
+        display: none;
+    }
+}

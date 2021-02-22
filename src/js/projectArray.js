@@ -33,7 +33,7 @@ const projects = [
         processCoverImg: 'img/process/kst/kst--process-cover.jpg',
         description: 'Final project for User-Centered Research & Evaluation',
         url: './kelly-strayhorn.html',
-        processUrl: null
+        processUrl: './kelly-strayhorn-process.html'
     },
     {
         projectId: 'usb',
