@@ -245,40 +245,42 @@ function miniNav() {
     let thisProjectIndex = projects.indexOf(thisProjectObject);
     console.log('This project Index: ' + thisProjectIndex);
 
-    let miniNav = document.getElementById('mini-nav');
-
-    // Get next project with a process book link:
-    let processCounter = thisProjectIndex + 1;
-    let prevProcessCounter = thisProjectIndex - 1;
-    let nextProcess;
-    let prevProcess;
-    console.log('processCounter: ' + processCounter);
-    while (projects[processCounter].processUrl == null) {
-        processCounter++;
-        if (processCounter == projects.length) {
-            processCounter = 0;
-        }
-        nextProcess = projects[processCounter];
-    };
-
-    console.log('prevProcessCounter: ' + prevProcessCounter);
-    
-    if (prevProcessCounter > 0) {
-        prevProcessCounter = projects.length;
+    // get the index before
+    let prevProjectIndex;
+    if (thisProjectIndex - 1 === -1) {
+        // if first in array, use last
+        prevProjectIndex = projects.length - 1;
+    } else {
+        prevProjectIndex = thisProjectIndex - 1;
+    }
+    console.log('Prev project Index: ' + prevProjectIndex);
+        
+    // get index after
+    let nextProjectIndex;
+    if (thisProjectIndex + 1 === projects.length) {
+        // if last in array, use 0
+        nextProjectIndex = 0;
+    } else {
+        nextProjectIndex = thisProjectIndex + 1;
     }
 
-    while (projects[prevProcessCounter].processUrl == null) {
-        prevProcessCounter--;
-        if (prevProcessCounter > 0) {
-            prevProcessCounter = projects.length;
-        }
-        prevProcess = projects[prevProcessCounter];
-    };
+    console.log('Next project Index: ' + nextProjectIndex);
 
+    // ######################
+    // Render project displays
+    // ######################
+
+    let miniNav = document.getElementById('mini-nav');
+
+    let prevProject = projects[prevProjectIndex];
+    let nextProject = projects[nextProjectIndex];
+
+    // Get next project with a process book link:
+    
     // Render the miniNav
     miniNav.innerHTML = `
-    <a href="` + prevProcess.processUrl + `"><p class="text-left eyebrow prev-next-label prev-label">Prev Process</p></a>
-    <a href="` + nextProcess.processUrl + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
+    <a href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">Prev Process</p></a>
+    <a href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
     `;
 }
 
@@ -297,8 +299,7 @@ const projects = [
         projectCoverImg: 'img/project/tempur-pedic/tempur-pedic--project-cover.jpg',
         processCoverImg: 'img/process/tempur-pedic/tempur-pedic--process-cover.jpg',
         description: 'Customizable and readymade landing page design system for mattress retailers',
-        url: './tempur-pedic.html',
-        processUrl: './tempur-pedic-process.html'
+        url: './tempur-pedic.html'
     },
     {
         projectId: 'uspc',
@@ -308,8 +309,7 @@ const projects = [
         projectCoverImg: 'img/project/uspc/uspc--project-cover.jpg',
         processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
         description: 'Website design for the leading playing card company in the U.S.',
-        url: './uspc.html',
-        processUrl: null
+        url: './uspc.html'
     },
     {
         projectId: 'kst',
@@ -319,20 +319,18 @@ const projects = [
         projectCoverImg: 'img/project/kst/kst--project-cover.jpg',
         processCoverImg: 'img/process/kst/kst--process-cover.jpg',
         description: 'Final project for User-Centered Research & Evaluation',
-        url: './kelly-strayhorn.html',
-        processUrl: './kelly-strayhorn-process.html'
+        url: './kelly-strayhorn.html'
     },
-    {
-        projectId: 'usb',
-        title: 'Union Savings Bank',
-        mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-        projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
-        processCoverImg: 'img/process/usb/usb--process-cover.jpg',
-        description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
-        url: './usb.html',
-        processUrl: null
-    },
+    // {
+    //     projectId: 'usb',
+    //     title: 'Union Savings Bank',
+    //     mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
+    //     processCoverImg: 'img/process/usb/usb--process-cover.jpg',
+    //     description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
+    //     url: './usb.html'
+    // },
     {
         projectId: 'raynor',
         title: 'Raynor Gaming',
@@ -341,20 +339,18 @@ const projects = [
         projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
         processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
         description: 'Ecommerce website for professional gaming chairs',
-        url: './raynor.html',
-        processUrl: null
+        url: './raynor.html'
     },
-    {
-        projectId: 'blue222',
-        title: 'Blue222',
-        mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
-        projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
-        processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
-        description: 'Wordpress website design & development',
-        url: './blue222.html',
-        processUrl: null
-    },
+    // {
+    //     projectId: 'blue222',
+    //     title: 'Blue222',
+    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
+    //     processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
+    //     description: 'Wordpress website design & development',
+    //     url: './blue222.html'
+    // },
 ];
 // projectLoop.js
 

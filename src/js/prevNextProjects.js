@@ -96,40 +96,42 @@ function miniNav() {
     let thisProjectIndex = projects.indexOf(thisProjectObject);
     console.log('This project Index: ' + thisProjectIndex);
 
-    let miniNav = document.getElementById('mini-nav');
-
-    // Get next project with a process book link:
-    let processCounter = thisProjectIndex + 1;
-    let prevProcessCounter = thisProjectIndex - 1;
-    let nextProcess;
-    let prevProcess;
-    console.log('processCounter: ' + processCounter);
-    while (projects[processCounter].processUrl == null) {
-        processCounter++;
-        if (processCounter == projects.length) {
-            processCounter = 0;
-        }
-        nextProcess = projects[processCounter];
-    };
-
-    console.log('prevProcessCounter: ' + prevProcessCounter);
-    
-    if (prevProcessCounter > 0) {
-        prevProcessCounter = projects.length;
+    // get the index before
+    let prevProjectIndex;
+    if (thisProjectIndex - 1 === -1) {
+        // if first in array, use last
+        prevProjectIndex = projects.length - 1;
+    } else {
+        prevProjectIndex = thisProjectIndex - 1;
+    }
+    console.log('Prev project Index: ' + prevProjectIndex);
+        
+    // get index after
+    let nextProjectIndex;
+    if (thisProjectIndex + 1 === projects.length) {
+        // if last in array, use 0
+        nextProjectIndex = 0;
+    } else {
+        nextProjectIndex = thisProjectIndex + 1;
     }
 
-    while (projects[prevProcessCounter].processUrl == null) {
-        prevProcessCounter--;
-        if (prevProcessCounter > 0) {
-            prevProcessCounter = projects.length;
-        }
-        prevProcess = projects[prevProcessCounter];
-    };
+    console.log('Next project Index: ' + nextProjectIndex);
 
+    // ######################
+    // Render project displays
+    // ######################
+
+    let miniNav = document.getElementById('mini-nav');
+
+    let prevProject = projects[prevProjectIndex];
+    let nextProject = projects[nextProjectIndex];
+
+    // Get next project with a process book link:
+    
     // Render the miniNav
     miniNav.innerHTML = `
-    <a href="` + prevProcess.processUrl + `"><p class="text-left eyebrow prev-next-label prev-label">Prev Process</p></a>
-    <a href="` + nextProcess.processUrl + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
+    <a href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">Prev Process</p></a>
+    <a href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
     `;
 }
 

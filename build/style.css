@@ -826,6 +826,10 @@ p, .p {
   font-size: 1em;
   letter-spacing: .02em;
   line-height: 1.75; }
+  p.p--large, .p.p--large {
+    font-size: 1.5em;
+    letter-spacing: 0;
+    line-height: 1.6; }
 
 .text-shadow {
   text-shadow: 0 4px 4px rgba(25, 33, 56, 0.5); }
