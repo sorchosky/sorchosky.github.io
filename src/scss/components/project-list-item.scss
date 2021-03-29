@@ -65,7 +65,7 @@
         margin-bottom: .5em;
     }
 
-    .project--disabled {
+    &.project--disabled {
 
         .project-list-item__img {
             filter: grayscale(100%);

@@ -298,7 +298,7 @@ const projects = [
         desktopImg: 'img/thumbnails/tempur-pedic-thumb@2x.jpg',
         projectCoverImg: 'img/project/tempur-pedic/tempur-pedic--project-cover.jpg',
         processCoverImg: 'img/process/tempur-pedic/tempur-pedic--process-cover.jpg',
-        description: 'Customizable and readymade landing page design system for mattress retailers',
+        description: 'An agency service model to distribute brand landing pages to thousands of retailers',
         url: './tempur-pedic.html',
         isPublic: true
     },
@@ -309,7 +309,7 @@ const projects = [
         desktopImg: 'img/thumbnails/uspc-thumb@2x.jpg',
         projectCoverImg: 'img/project/uspc/uspc--project-cover.jpg',
         processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
-        description: 'Website design for the leading playing card company in the U.S.',
+        description: 'Website to showcase the rich history of America’s most beloved playing card brands',
         url: './uspc.html',
         isPublic: false
     },
@@ -320,7 +320,7 @@ const projects = [
         desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
         projectCoverImg: 'img/project/kst/kst--project-cover.jpg',
         processCoverImg: 'img/process/kst/kst--process-cover.jpg',
-        description: 'Final project for User-Centered Research & Evaluation',
+        description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
         isPublic: true
     },
@@ -341,7 +341,7 @@ const projects = [
         desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
         projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
         processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
-        description: 'Ecommerce website for professional gaming chairs',
+        description: 'Professional gaming chair ecommerce website to give gamers an edge above the competition',
         url: './raynor.html',
         isPublic: false
     },
@@ -388,8 +388,9 @@ let projectLoop = () => {
             </a>`;
         } else {
             // html with project properties
+            projectListItem.classList.add("project--disabled");
             projectListItem.innerHTML = `
-            <div class="col-12 project--disabled">
+            <div class="col-12">
                 <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>

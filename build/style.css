@@ -1172,9 +1172,9 @@ footer {
         position: relative; } }
   .project-list-item h3, .project-list-item .h3 {
     margin-bottom: .5em; }
-  .project-list-item .project--disabled .project-list-item__img {
+  .project-list-item.project--disabled .project-list-item__img {
     filter: grayscale(100%); }
-  .project-list-item .project--disabled:hover .project-list-item__img {
+  .project-list-item.project--disabled:hover .project-list-item__img {
     background-size: auto 100%;
     opacity: .3; }
   @media (min-width: 767.98px) {
