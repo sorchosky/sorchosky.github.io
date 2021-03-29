@@ -810,8 +810,9 @@ h4, h5, h6 {
 .eyebrow {
   color: #F1EBDC;
   font-weight: 400;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.075em;
   line-height: 1;
+  margin: 0 0 1em 0;
   text-transform: uppercase; }
 
 .eyebrow:before {
@@ -828,7 +829,6 @@ p, .p {
   line-height: 1.75; }
   p.p--large, .p.p--large {
     font-size: 1.5em;
-    letter-spacing: 0;
     line-height: 1.6; }
 
 .text-shadow {
