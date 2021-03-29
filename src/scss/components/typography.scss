@@ -2,30 +2,34 @@
 
 h1, .h1 {
     font-family: $headings-font-family;
-    font-size: 3.5em;
+    font-size: 3em;
     font-style: normal;
     font-weight: $font-weight-base;
     line-height: $display-line-height;
     letter-spacing: -0.01em;
-    text-align: center;
+    text-align: left;
 
     @include md {
-        font-size: 4.5em;
+        font-size: 3.5em;
     }
 
     @include lg {
-        font-size: 6em;
+        font-size: 4.5em;
     }
 }
 
 h2, .h2 {
-    font-size: 4.5em;
-    line-height: .825;
+    font-size: 2.5em;
+    line-height: 1.1;
     margin-bottom: .5em;
+
+    @include lg {
+        font-size: 3em;
+    }
 }
 
 h3, .h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: .5em;
 }
 
@@ -63,9 +67,9 @@ p, .p {
     letter-spacing: .02em;
     line-height: 1.75;
 
-    // @include lg {
-    //     font-size: 1.1em;
-    // }
+    @include lg {
+        font-size: 1.125em;
+    }
 
     &.p--large {
         font-size: 1.5em;

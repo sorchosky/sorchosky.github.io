@@ -2,8 +2,8 @@
 .jumbotron {
     align-items: center;
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    height: 80vh;
+    justify-content: flex-start;
     margin-top: 0;
     position: relative;
 }
@@ -33,7 +33,7 @@
     max-height: 70vh;
     margin: auto;
     object-fit: cover;
-    opacity: .4;
+    opacity: .3;
     position: absolute;
     width: 70vw;
     max-width: 70vh;
