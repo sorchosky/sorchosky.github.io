@@ -11,9 +11,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body onload="prevNextProjects(); fadeInPage()" id="uspc" class="process-page">
+<body onload="miniNav(); fadeInPage(); prevNextProjects();" id="uspc" class="process-page">
     <svg id="fader"></svg>
     <header>
         <nav class="navbar navbar-dark fixed-top">
@@ -48,6 +48,9 @@
                         <li class="nav-item">
                             <h2><a class="nav-link" href="projects.html">Projects</a></h2>
                         </li>
+                        <li class="nav-item">
+                            <h2><a class="nav-link" href="visual-design.html">Visual Design</a></h2>
+                        </li>
                     </ul>
 
                     <!-- Social Links -->
@@ -79,11 +82,16 @@
 
     <main class="container">
         <!-- Cover -->
-        <div class="row jumbotron">
+        <div class="jumbotron">
             <div id="mini-nav"></div>
+
+            <div class="readmore">
+                <a href="#readmore" id="readmore"><p class="text-center eyebrow">READ MORE</p></a>
+            </div>
+
             <div class="jumbotron__text">
-                <h1 class="h1 jumbotron__h1">U.S. Playing Card Company</h1>
-                <p class="lead">Wordpress website design &amp; development</p>
+                <h1 class="h1 jumbotron__h1 text-center">U.S. Playing Card Company</h1>
+                <p class="lead text-center">Wordpress website design &amp; development</p>
             </div>
             <img class="jumbotron__img" src="img/project--uspc/uspc--cover.png" alt="US Playing Card Cover Image">
         </div>

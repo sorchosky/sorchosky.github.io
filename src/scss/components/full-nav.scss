@@ -78,7 +78,6 @@
         @include lg {
             align-items: start;
             padding: 0 0 0 4em;
-            width: 50%;
         }
 
         a.nav-link {
@@ -88,7 +87,12 @@
             text-decoration: none;
     
             @include lg {
+                font-size: .75em;
                 text-align: left;
+            }
+
+            @include xl {
+                font-size: 1em;
             }
     
             &:hover {

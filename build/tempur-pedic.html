@@ -13,7 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
-<body onload="miniNav(); fadeInPage();" id="tempur-pedic" class="process-page">
+<body onload="miniNav(); fadeInPage(); prevNextProjects();" id="tempur-pedic" class="process-page">
     <svg id="fader"></svg>
     <header>
         <nav class="navbar navbar-dark fixed-top">
@@ -47,6 +47,9 @@
                         </li>
                         <li class="nav-item">
                             <h2><a class="nav-link" href="projects.html">Projects</a></h2>
+                        </li>
+                        <li class="nav-item">
+                            <h2><a class="nav-link" href="visual-design.html">Visual Design</a></h2>
                         </li>
                     </ul>
 
@@ -87,7 +90,6 @@
             </div>
 
             <div class="jumbotron__text">
-                <h6 class="jumbotron__h6 text-center">Full Process</h6>
                 <h1 class="h1 jumbotron__h1 text-center">Tempur-Pedic</h1>
                 <p class="lead text-center">UI Design, Front-End Development &amp; Service Design</p>
             </div>
@@ -216,7 +218,7 @@
             </div>
         </section>
 
-        <section id="prevNextProjects">
+        <section class="projects row prev-next reveal" id="prevNextProjects">
         </section>
 
     </main>

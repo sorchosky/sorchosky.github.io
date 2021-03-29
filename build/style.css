@@ -950,8 +950,7 @@ header .navbar-toggler {
     @media (min-width: 991.98px) {
       .full-nav .navbar-nav {
         align-items: start;
-        padding: 0 0 0 4em;
-        width: 50%; } }
+        padding: 0 0 0 4em; } }
     .full-nav .navbar-nav a.nav-link {
       color: #F1EBDC;
       opacity: 1;
@@ -959,7 +958,11 @@ header .navbar-toggler {
       text-decoration: none; }
       @media (min-width: 991.98px) {
         .full-nav .navbar-nav a.nav-link {
+          font-size: .75em;
           text-align: left; } }
+      @media (min-width: 1199.98px) {
+        .full-nav .navbar-nav a.nav-link {
+          font-size: 1em; } }
       .full-nav .navbar-nav a.nav-link:hover {
         color: #007bff; }
   .full-nav .full-nav__social {
@@ -1281,3 +1284,8 @@ section.row {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: .08em; }
+
+.visual-design-slides__controls {
+  margin: 0 0 1em;
+  position: relative;
+  right: 0; }

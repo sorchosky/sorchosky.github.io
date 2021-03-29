@@ -311,7 +311,7 @@ const projects = [
         processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
         description: 'Website to showcase the rich history of America’s most beloved playing card brands',
         url: './uspc.html',
-        isPublic: false
+        isPublic: true
     },
     {
         projectId: 'kst',
@@ -453,4 +453,16 @@ $(document).ready(function(){
         pauseOnHover: false,
         speed: 2000
     });
-});     
+});
+
+$(document).ready(function(){
+    $('.slick--visual-design').slick({
+        autoplay: true,
+        autoplaySpeed: 10000,
+        arrows: true,
+        fade: true,
+        speed: 1000,
+        prevArrow: $(".visual-design-slides__prev"),
+        nextArrow: $(".visual-design-slides__next")
+    });
+});

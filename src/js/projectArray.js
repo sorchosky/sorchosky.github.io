@@ -22,7 +22,7 @@ const projects = [
         processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
         description: 'Website to showcase the rich history of America’s most beloved playing card brands',
         url: './uspc.html',
-        isPublic: false
+        isPublic: true
     },
     {
         projectId: 'kst',

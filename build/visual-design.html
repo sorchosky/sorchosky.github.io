@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Orchosky | Blue222</title>
+    <title>Steve Orchosky | Visual Design</title>
 
     <!-- Vendor -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://unpkg.com/scrollreveal"></script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="prevNextProjects(); fadeInPage()" id="blue222" class="project-page">
+<body onload="fadeInPage()" id="raynor" class="project-page">
     <svg id="fader"></svg>
     <header>
         <nav class="navbar navbar-dark fixed-top">
@@ -47,6 +48,9 @@
                         </li>
                         <li class="nav-item">
                             <h2><a class="nav-link" href="projects.html">Projects</a></h2>
+                        </li>
+                        <li class="nav-item">
+                            <h2><a class="nav-link" href="visual_design.html">Visual Design</a></h2>
                         </li>
                     </ul>
 
@@ -82,63 +86,30 @@
         <div class="jumbotron">
 
             <div class="">
-                <h1 class="h1 text-left">Blue222</h1>
-                <p class="lead">Wordpress website design &amp; development</p>
-                <!-- <a href="./blue222-process.html" class="btn btn-outline-secondary">View Full Process</a> -->
+                <h1 class="h1 text-left">Visual Design</h1>
+                <p class="lead">Various professional, educational, and personal projects</p>
             </div>
         </div>
 
-        <img src="img/project/blue222/blue222--project-cover@2x.jpg" class="img-fluid" alt="Blue222 Project Cover">
-
-        <!-- About the Project -->
-        <section class="row">
-            <div>
-                <div class="col-12 col-md-8">
-                <h6 class="eyebrow">About the Project</h6>
-                <h2 class="h3">Designing a new service to deploy landing pages across Tempur-Pedic’s retail network</h2>
-                </div>
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p>Text description here</p>
-                    <div class="row no-gutters">
-                        <div class="col col-12 col-md-6">
-                            <h5>My Role</h5>
-                            <p>Art direction, UI design, front-end development (Wordpress)</p>
-                            <h5>Context</h5>
-                            <p>Website design & development for Blue222, a client of  Icon Marketing</p>
-                        </div>
-                        <div class="col col-12 col-md-6">
-                            <h5>Full Team</h5>
-                            <ul class="full-team__ul">
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Eric Thompson</p>
-                                    <h6 class="full-team__h6">Associate Creative Director</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Aimee Everman Grogean</p>
-                                    <h6 class="full-team__h6">Senior Designer</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Elly Wainscott</p>
-                                    <h6 class="full-team__h6">Associate Client Services Manager</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Scott Schierberg</p>
-                                    <h6 class="full-team__h6">Senior Accout Executive</h6>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- <img src="./img/project/kst/UCRE-Poster-Final__Team_C1@2x.jpg" class="col img-fluid" alt="U.S Playing Card website mockup"> -->
+        <!-- Slider -->
+        <section class="row visual-design-slides">
+            <div class="visual-design-slides__controls">
+                <button class="visual-design-slides__prev"><img class='slick-prev' src='img/utility/left_arrow.svg'></button>
+                <button class="visual-design-slides__next"><img class='slick-next' src='img/utility/right_arrow.svg'></button>
+            </div>
+            <div class="slick slick--visual-design" style="width: 100%;">
+                <img src="img/visual_design/visual_design__daily_UI@2x.png" class="img-fluid" alt="">
+                <img src="img/visual_design/visual_design__usb@2x.png" class="img-fluid" alt="">
+                <img src="img/visual_design/visual_design__ad_badger@2x.png" class="img-fluid" alt="">
+                <img src="img/visual_design/visual_design__sheboygan@2x.png" class="img-fluid" alt="">
             </div>
         </section>
-    </main>
 
-    <!-- PrevNext Render -->
-    <section class="container">
-        <div class="projects row prev-next reveal" id="prevNextProjects">
-        </div>
-    </section>
+        <!-- Prototypes -->
+        <section class="row">
+            <!-- <h3>Live Websites &amp; Prototypes</h3> -->
+        </section>     
+    </main>
 
     <!-- Footer -->
     <div class="container">
@@ -190,6 +161,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Custom Script -->
     <script src="scripts.js"></script>
 </body>
