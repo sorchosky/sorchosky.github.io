@@ -249,7 +249,9 @@ function miniNav() {
 
     // Get next project with a process book link:
     let processCounter = thisProjectIndex + 1;
+    let prevProcessCounter = thisProjectIndex - 1;
     let nextProcess;
+    let prevProcess;
     console.log('processCounter: ' + processCounter);
     while (projects[processCounter].processUrl == null) {
         processCounter++;
@@ -259,9 +261,23 @@ function miniNav() {
         nextProcess = projects[processCounter];
     };
 
+    console.log('prevProcessCounter: ' + prevProcessCounter);
+    
+    if (prevProcessCounter > 0) {
+        prevProcessCounter = projects.length;
+    }
+
+    while (projects[prevProcessCounter].processUrl == null) {
+        prevProcessCounter--;
+        if (prevProcessCounter > 0) {
+            prevProcessCounter = projects.length;
+        }
+        prevProcess = projects[prevProcessCounter];
+    };
+
     // Render the miniNav
     miniNav.innerHTML = `
-    <a href="` + projects[thisProjectIndex].url + `"><p class="text-left eyebrow prev-next-label prev-label">Project Cover</p></a>
+    <a href="` + prevProcess.processUrl + `"><p class="text-left eyebrow prev-next-label prev-label">Prev Process</p></a>
     <a href="` + nextProcess.processUrl + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
     `;
 }
