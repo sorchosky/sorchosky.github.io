@@ -421,3 +421,14 @@ ScrollReveal().reveal('.jumbotron__img', {
 ScrollReveal().reveal('.jumbotron__h1', {
     delay: 700
 });
+$(document).ready(function(){
+    $('.slick--autoplay').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        fade: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        speed: 2000
+    });
+});     
