@@ -299,7 +299,8 @@ const projects = [
         projectCoverImg: 'img/project/tempur-pedic/tempur-pedic--project-cover.jpg',
         processCoverImg: 'img/process/tempur-pedic/tempur-pedic--process-cover.jpg',
         description: 'Customizable and readymade landing page design system for mattress retailers',
-        url: './tempur-pedic.html'
+        url: './tempur-pedic.html',
+        isPublic: true
     },
     {
         projectId: 'uspc',
@@ -309,7 +310,8 @@ const projects = [
         projectCoverImg: 'img/project/uspc/uspc--project-cover.jpg',
         processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
         description: 'Website design for the leading playing card company in the U.S.',
-        url: './uspc.html'
+        url: './uspc.html',
+        isPublic: false
     },
     {
         projectId: 'kst',
@@ -319,7 +321,8 @@ const projects = [
         projectCoverImg: 'img/project/kst/kst--project-cover.jpg',
         processCoverImg: 'img/process/kst/kst--process-cover.jpg',
         description: 'Final project for User-Centered Research & Evaluation',
-        url: './kelly-strayhorn.html'
+        url: './kelly-strayhorn.html',
+        isPublic: true
     },
     // {
     //     projectId: 'usb',
@@ -339,7 +342,8 @@ const projects = [
         projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
         processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
         description: 'Ecommerce website for professional gaming chairs',
-        url: './raynor.html'
+        url: './raynor.html',
+        isPublic: false
     },
     // {
     //     projectId: 'blue222',
@@ -364,21 +368,38 @@ let projectLoop = () => {
         let desktopImg = projects[project].desktopImg;
         let description = projects[project].description;
         let url = projects[project].url;
+        let isPublic = projects[project].isPublic;
 
         // create project li element
         let projectListItem = document.createElement('li');
         projectListItem.classList = "project-list-item d-block col-12 d-md-flex col-lg-6";
-        // html with project properties
-        projectListItem.innerHTML = `
-        <a href="` + url + `" class="col-12">
-            <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
-            <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
-            </div>
-            <div class="project-list-item__text col-12 col-md-8">
-                <h3>` + title + `</h3>
-                <p>` + description + `</p>
-            </div>
-        </a>`
+
+        if (isPublic) {
+            // html with project properties
+            projectListItem.innerHTML = `
+            <a href="` + url + `" class="col-12">
+                <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
+                <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
+                </div>
+                <div class="project-list-item__text col-12 col-md-8">
+                    <h3>` + title + `</h3>
+                    <p>` + description + `</p>
+                </div>
+            </a>`;
+        } else {
+            // html with project properties
+            projectListItem.innerHTML = `
+            <div class="col-12 project--disabled">
+                <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
+                <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
+                </div>
+                <div class="project-list-item__text col-12 col-md-8">
+                    <h6 class="eyebrow">Coming Soon</h6>
+                    <h3>` + title + `</h3>
+                    <p>` + description + `</p>
+                </div>
+            </div>`;
+        }
         // append to #projectList
         projectList.appendChild(projectListItem);
     }

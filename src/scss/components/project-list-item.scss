@@ -65,6 +65,20 @@
         margin-bottom: .5em;
     }
 
+    .project--disabled {
+
+        .project-list-item__img {
+            filter: grayscale(100%);
+        }
+
+        &:hover {
+            .project-list-item__img {
+                background-size: auto 100%;
+                opacity: .3;
+            }
+        }
+    }
+
     @include md {
 
         &:nth-child(odd) {

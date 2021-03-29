@@ -10,7 +10,8 @@ const projects = [
         projectCoverImg: 'img/project/tempur-pedic/tempur-pedic--project-cover.jpg',
         processCoverImg: 'img/process/tempur-pedic/tempur-pedic--process-cover.jpg',
         description: 'Customizable and readymade landing page design system for mattress retailers',
-        url: './tempur-pedic.html'
+        url: './tempur-pedic.html',
+        isPublic: true
     },
     {
         projectId: 'uspc',
@@ -20,7 +21,8 @@ const projects = [
         projectCoverImg: 'img/project/uspc/uspc--project-cover.jpg',
         processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
         description: 'Website design for the leading playing card company in the U.S.',
-        url: './uspc.html'
+        url: './uspc.html',
+        isPublic: false
     },
     {
         projectId: 'kst',
@@ -30,7 +32,8 @@ const projects = [
         projectCoverImg: 'img/project/kst/kst--project-cover.jpg',
         processCoverImg: 'img/process/kst/kst--process-cover.jpg',
         description: 'Final project for User-Centered Research & Evaluation',
-        url: './kelly-strayhorn.html'
+        url: './kelly-strayhorn.html',
+        isPublic: true
     },
     // {
     //     projectId: 'usb',
@@ -50,7 +53,8 @@ const projects = [
         projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
         processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
         description: 'Ecommerce website for professional gaming chairs',
-        url: './raynor.html'
+        url: './raynor.html',
+        isPublic: false
     },
     // {
     //     projectId: 'blue222',
