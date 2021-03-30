@@ -7,8 +7,8 @@ const projects = [
         title: 'Tempur-Pedic',
         mobileImg: 'img/thumbnails/tempur-pedic-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/tempur-pedic-thumb@2x.jpg',
-        projectCoverImg: 'img/project/tempur-pedic/tempur-pedic--project-cover.jpg',
-        processCoverImg: 'img/process/tempur-pedic/tempur-pedic--process-cover.jpg',
+        projectCoverImg: 'img/project--tempur-pedic/tempur-pedic--project-cover@2x.jpg',
+        processCoverImg: 'img/project--tempur-pedic/tempur-pedic--project-cover@2x.jpg',
         description: 'An agency service model to distribute brand landing pages to thousands of retailers',
         url: './tempur-pedic.html',
         isPublic: true
@@ -18,8 +18,8 @@ const projects = [
         title: 'U.S. Playing Card',
         mobileImg: 'img/thumbnails/uspc-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/uspc-thumb@2x.jpg',
-        projectCoverImg: 'img/project/uspc/uspc--project-cover.jpg',
-        processCoverImg: 'img/process/uspc/uspc--process-cover.jpg',
+        projectCoverImg: 'img/project--uspc/uspc--project-cover@2x.jpg',
+        processCoverImg: 'img/project--uspc/uspc--project-cover@2x.jpg',
         description: 'Website to showcase the rich history of America’s most beloved playing card brands',
         url: './uspc.html',
         isPublic: true
@@ -29,8 +29,8 @@ const projects = [
         title: 'Kelly Strayhorn Theater',
         mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
-        projectCoverImg: 'img/project/kst/kst--project-cover.jpg',
-        processCoverImg: 'img/process/kst/kst--process-cover.jpg',
+        projectCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',
+        processCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',
         description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
         isPublic: true
