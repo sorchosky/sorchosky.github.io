@@ -1298,6 +1298,9 @@ section.row {
   font-weight: 400;
   letter-spacing: .08em; }
 
+.uspc__homepage video {
+  margin-bottom: -1em; }
+
 .visual-design-slides__controls {
   margin: 0 0 1em;
   position: relative;
