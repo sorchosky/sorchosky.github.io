@@ -156,16 +156,16 @@ let prevNextProjects = () => {
     let pageProjectId = body.id;
     console.log('Page ID: ' + pageProjectId)
     // get corresponding number from projects
-    let thisProjectObject = projects.find(project => project.projectId === pageProjectId);
+    let thisProjectObject = publicProjects.find(project => project.projectId === pageProjectId);
     // This project's index
-    let thisProjectIndex = projects.indexOf(thisProjectObject);
+    let thisProjectIndex = publicProjects.indexOf(thisProjectObject);
     console.log('This project Index: ' + thisProjectIndex);
     
     // get the index before
     let prevProjectIndex;
     if (thisProjectIndex - 1 === -1) {
         // if first in array, use last
-        prevProjectIndex = projects.length - 1;
+        prevProjectIndex = publicProjects.length - 1;
     } else {
         prevProjectIndex = thisProjectIndex - 1;
     }
@@ -173,7 +173,7 @@ let prevNextProjects = () => {
         
     // get index after
     let nextProjectIndex;
-    if (thisProjectIndex + 1 === projects.length) {
+    if (thisProjectIndex + 1 === publicProjects.length) {
         // if last in array, use 0
         nextProjectIndex = 0;
     } else {
@@ -188,8 +188,8 @@ let prevNextProjects = () => {
 
     let prevNextProjectsDiv = document.getElementById('prevNextProjects');
 
-    let prevProject = projects[prevProjectIndex];
-    let nextProject = projects[nextProjectIndex];
+    let prevProject = publicProjects[prevProjectIndex];
+    let nextProject = publicProjects[nextProjectIndex];
 
     // Previous project
     let prevProjectDiv = document.createElement('div');
@@ -227,7 +227,7 @@ let prevNextProjects = () => {
 
     prevNextProjectsDiv.appendChild(nextProjectDiv);
 
-    console.log('Project length: ' + projects.length);
+    console.log('Project length: ' + publicProjects.length);
 }
 
 // ##########################
@@ -240,16 +240,16 @@ function miniNav() {
     let pageProjectId = body.id;
     console.log('Page ID: ' + pageProjectId)
     // get corresponding number from projects
-    let thisProjectObject = projects.find(project => project.projectId === pageProjectId);
+    let thisProjectObject = publicProjects.find(project => project.projectId === pageProjectId);
     // This project's index
-    let thisProjectIndex = projects.indexOf(thisProjectObject);
+    let thisProjectIndex = publicProjects.indexOf(thisProjectObject);
     console.log('This project Index: ' + thisProjectIndex);
 
     // get the index before
     let prevProjectIndex;
     if (thisProjectIndex - 1 === -1) {
         // if first in array, use last
-        prevProjectIndex = projects.length - 1;
+        prevProjectIndex = publicProjects.length - 1;
     } else {
         prevProjectIndex = thisProjectIndex - 1;
     }
@@ -257,7 +257,7 @@ function miniNav() {
         
     // get index after
     let nextProjectIndex;
-    if (thisProjectIndex + 1 === projects.length) {
+    if (thisProjectIndex + 1 === publicProjects.length) {
         // if last in array, use 0
         nextProjectIndex = 0;
     } else {
@@ -272,8 +272,8 @@ function miniNav() {
 
     let miniNav = document.getElementById('mini-nav');
 
-    let prevProject = projects[prevProjectIndex];
-    let nextProject = projects[nextProjectIndex];
+    let prevProject = publicProjects[prevProjectIndex];
+    let nextProject = publicProjects[nextProjectIndex];
 
     // Get next project with a process book link:
     
@@ -324,16 +324,6 @@ const projects = [
         url: './kelly-strayhorn.html',
         isPublic: true
     },
-    // {
-    //     projectId: 'usb',
-    //     title: 'Union Savings Bank',
-    //     mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
-    //     processCoverImg: 'img/process/usb/usb--process-cover.jpg',
-    //     description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
-    //     url: './usb.html'
-    // },
     {
         projectId: 'raynor',
         title: 'Raynor Gaming',
@@ -346,6 +336,16 @@ const projects = [
         isPublic: false
     },
     // {
+    //     projectId: 'usb',
+    //     title: 'Union Savings Bank',
+    //     mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
+    //     processCoverImg: 'img/process/usb/usb--process-cover.jpg',
+    //     description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
+    //     url: './usb.html'
+    // },
+    // {
     //     projectId: 'blue222',
     //     title: 'Blue222',
     //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
@@ -356,6 +356,8 @@ const projects = [
     //     url: './blue222.html'
     // },
 ];
+
+const publicProjects = projects.filter(project => project.isPublic == true);
 // projectLoop.js
 
 // PROJECT LOOP
@@ -416,14 +418,14 @@ for (i = 0; i < 3; i++) {
     projectLoopMenuItem.setAttribute("href", projects[i].url);
     if (i == 0) {
         projectLoopMenuItem.classList.add("full-nav__project--featured");
-        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].projectCoverImg + "')";
+        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + publicProjects[i].projectCoverImg + "')";
     } else {
         projectLoopMenuItem.classList.add("full-nav__project--nonfeatured");
-        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + projects[i].processCoverImg + "')";
+        projectLoopMenuItem.style.backgroundImage = "linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0), rgba(0, 0, 0, .7)), url('" + publicProjects[i].processCoverImg + "')";
     }
     projectLoopMenuItem.innerHTML = `
     <div class="project-text">
-        <p>` + projects[i].title + `</p>
+        <p>` + publicProjects[i].title + `</p>
     </div>
     `
     projectLoopMenu.appendChild(projectLoopMenuItem);

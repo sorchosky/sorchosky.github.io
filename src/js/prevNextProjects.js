@@ -7,16 +7,16 @@ let prevNextProjects = () => {
     let pageProjectId = body.id;
     console.log('Page ID: ' + pageProjectId)
     // get corresponding number from projects
-    let thisProjectObject = projects.find(project => project.projectId === pageProjectId);
+    let thisProjectObject = publicProjects.find(project => project.projectId === pageProjectId);
     // This project's index
-    let thisProjectIndex = projects.indexOf(thisProjectObject);
+    let thisProjectIndex = publicProjects.indexOf(thisProjectObject);
     console.log('This project Index: ' + thisProjectIndex);
     
     // get the index before
     let prevProjectIndex;
     if (thisProjectIndex - 1 === -1) {
         // if first in array, use last
-        prevProjectIndex = projects.length - 1;
+        prevProjectIndex = publicProjects.length - 1;
     } else {
         prevProjectIndex = thisProjectIndex - 1;
     }
@@ -24,7 +24,7 @@ let prevNextProjects = () => {
         
     // get index after
     let nextProjectIndex;
-    if (thisProjectIndex + 1 === projects.length) {
+    if (thisProjectIndex + 1 === publicProjects.length) {
         // if last in array, use 0
         nextProjectIndex = 0;
     } else {
@@ -39,8 +39,8 @@ let prevNextProjects = () => {
 
     let prevNextProjectsDiv = document.getElementById('prevNextProjects');
 
-    let prevProject = projects[prevProjectIndex];
-    let nextProject = projects[nextProjectIndex];
+    let prevProject = publicProjects[prevProjectIndex];
+    let nextProject = publicProjects[nextProjectIndex];
 
     // Previous project
     let prevProjectDiv = document.createElement('div');
@@ -78,7 +78,7 @@ let prevNextProjects = () => {
 
     prevNextProjectsDiv.appendChild(nextProjectDiv);
 
-    console.log('Project length: ' + projects.length);
+    console.log('Project length: ' + publicProjects.length);
 }
 
 // ##########################
@@ -91,16 +91,16 @@ function miniNav() {
     let pageProjectId = body.id;
     console.log('Page ID: ' + pageProjectId)
     // get corresponding number from projects
-    let thisProjectObject = projects.find(project => project.projectId === pageProjectId);
+    let thisProjectObject = publicProjects.find(project => project.projectId === pageProjectId);
     // This project's index
-    let thisProjectIndex = projects.indexOf(thisProjectObject);
+    let thisProjectIndex = publicProjects.indexOf(thisProjectObject);
     console.log('This project Index: ' + thisProjectIndex);
 
     // get the index before
     let prevProjectIndex;
     if (thisProjectIndex - 1 === -1) {
         // if first in array, use last
-        prevProjectIndex = projects.length - 1;
+        prevProjectIndex = publicProjects.length - 1;
     } else {
         prevProjectIndex = thisProjectIndex - 1;
     }
@@ -108,7 +108,7 @@ function miniNav() {
         
     // get index after
     let nextProjectIndex;
-    if (thisProjectIndex + 1 === projects.length) {
+    if (thisProjectIndex + 1 === publicProjects.length) {
         // if last in array, use 0
         nextProjectIndex = 0;
     } else {
@@ -123,8 +123,8 @@ function miniNav() {
 
     let miniNav = document.getElementById('mini-nav');
 
-    let prevProject = projects[prevProjectIndex];
-    let nextProject = projects[nextProjectIndex];
+    let prevProject = publicProjects[prevProjectIndex];
+    let nextProject = publicProjects[nextProjectIndex];
 
     // Get next project with a process book link:
     

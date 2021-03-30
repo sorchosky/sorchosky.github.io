@@ -35,16 +35,6 @@ const projects = [
         url: './kelly-strayhorn.html',
         isPublic: true
     },
-    // {
-    //     projectId: 'usb',
-    //     title: 'Union Savings Bank',
-    //     mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
-    //     processCoverImg: 'img/process/usb/usb--process-cover.jpg',
-    //     description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
-    //     url: './usb.html'
-    // },
     {
         projectId: 'raynor',
         title: 'Raynor Gaming',
@@ -57,6 +47,16 @@ const projects = [
         isPublic: false
     },
     // {
+    //     projectId: 'usb',
+    //     title: 'Union Savings Bank',
+    //     mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
+    //     processCoverImg: 'img/process/usb/usb--process-cover.jpg',
+    //     description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
+    //     url: './usb.html'
+    // },
+    // {
     //     projectId: 'blue222',
     //     title: 'Blue222',
     //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
@@ -67,3 +67,5 @@ const projects = [
     //     url: './blue222.html'
     // },
 ];
+
+const publicProjects = projects.filter(project => project.isPublic == true);
