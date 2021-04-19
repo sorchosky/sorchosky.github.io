@@ -25,17 +25,6 @@ const projects = [
         isPublic: true
     },
     {
-        projectId: 'optum',
-        title: 'Optum',
-        mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/optum-thumb@2x.jpg',
-        projectCoverImg: 'img/project--optum/optum--project-cover.jpg',
-        processCoverImg: 'img/project--optum/optum--process-cover.jpg',
-        description: 'A new digital healthcare service for life after COVID-19',
-        url: './optum.html',
-        isPublic: true
-    },
-    {
         projectId: 'kst',
         title: 'Kelly Strayhorn Theater',
         mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
@@ -57,6 +46,17 @@ const projects = [
     //     url: './raynor.html',
     //     isPublic: false
     // },
+    {
+        projectId: 'optum',
+        title: 'Optum',
+        mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/optum-thumb@2x.jpg',
+        projectCoverImg: 'img/project--optum/optum--project-cover.jpg',
+        processCoverImg: 'img/project--optum/optum--process-cover.jpg',
+        description: 'A new digital healthcare service for life after COVID-19',
+        url: './optum.html',
+        isPublic: false
+    },
     {
         projectId: 'microsoft',
         title: 'Microsoft',
