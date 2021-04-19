@@ -32,7 +32,7 @@ let projectLoop = () => {
             // html with project properties
             projectListItem.classList.add("project--disabled");
             projectListItem.innerHTML = `
-            <div>
+            <div class="col-12">
                 <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>

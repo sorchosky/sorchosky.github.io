@@ -314,6 +314,17 @@ const projects = [
         isPublic: true
     },
     {
+        projectId: 'optum',
+        title: 'Optum',
+        mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/optum-thumb@2x.jpg',
+        projectCoverImg: 'img/project--optum/optum--project-cover.jpg',
+        processCoverImg: 'img/project--optum/optum--process-cover.jpg',
+        description: 'A new digital healthcare service for life after COVID-19',
+        url: './optum.html',
+        isPublic: true
+    },
+    {
         projectId: 'kst',
         title: 'Kelly Strayhorn Theater',
         mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
@@ -324,37 +335,28 @@ const projects = [
         url: './kelly-strayhorn.html',
         isPublic: true
     },
+    // {
+    //     projectId: 'raynor',
+    //     title: 'Raynor Gaming',
+    //     mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
+    //     desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
+    //     projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
+    //     processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
+    //     description: 'Professional gaming chair ecommerce website to give gamers an edge above the competition',
+    //     url: './raynor.html',
+    //     isPublic: false
+    // },
     {
-        projectId: 'raynor',
-        title: 'Raynor Gaming',
-        mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
-        projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
-        processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
-        description: 'Professional gaming chair ecommerce website to give gamers an edge above the competition',
-        url: './raynor.html',
+        projectId: 'microsoft',
+        title: 'Microsoft',
+        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
+        projectCoverImg: 'img/project--raynor/microsoft--project-cover.jpg',
+        processCoverImg: 'img/project--raynor/microsoft--process-cover.jpg',
+        description: 'A new mixed reality experience for remote creative collaboration',
+        url: './microsoft.html',
         isPublic: false
-    },
-    // {
-    //     projectId: 'usb',
-    //     title: 'Union Savings Bank',
-    //     mobileImg: 'img/thumbnails/usb-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/usb-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/usb/usb--project-cover.jpg',
-    //     processCoverImg: 'img/process/usb/usb--process-cover.jpg',
-    //     description: 'Website design and lead generation strategy for one of the largest mortgage lenders in the Midwest',
-    //     url: './usb.html'
-    // },
-    // {
-    //     projectId: 'blue222',
-    //     title: 'Blue222',
-    //     mobileImg: 'img/thumbnails/blue222-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/blue222-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/blue222/blue222--project-cover.jpg',
-    //     processCoverImg: 'img/process/blue222/blue222--process-cover.jpg',
-    //     description: 'Wordpress website design & development',
-    //     url: './blue222.html'
-    // },
+    }
 ];
 
 const publicProjects = projects.filter(project => project.isPublic == true);
@@ -392,7 +394,7 @@ let projectLoop = () => {
             // html with project properties
             projectListItem.classList.add("project--disabled");
             projectListItem.innerHTML = `
-            <div>
+            <div class="col-12">
                 <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
