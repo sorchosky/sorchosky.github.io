@@ -3,6 +3,28 @@
 // PROJECT ARRAY
 const projects = [
     {
+        projectId: 'optum',
+        title: 'Optum',
+        mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/optum-thumb@2x.jpg',
+        projectCoverImg: 'img/project--optum/optum--project-cover.jpg',
+        processCoverImg: 'img/project--optum/optum--process-cover.jpg',
+        description: 'A new digital healthcare service for life after COVID-19',
+        url: './optum.html',
+        isPublic: false
+    },
+    {
+        projectId: 'microsoft',
+        title: 'Microsoft',
+        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
+        projectCoverImg: 'img/project--raynor/microsoft--project-cover.jpg',
+        processCoverImg: 'img/project--raynor/microsoft--process-cover.jpg',
+        description: 'A new mixed reality experience for remote creative collaboration',
+        url: './microsoft.html',
+        isPublic: false
+    },
+    {
         projectId: 'tempur-pedic',
         title: 'Tempur-Pedic',
         mobileImg: 'img/thumbnails/tempur-pedic-thumb--mobile@2x.jpg',
@@ -45,29 +67,7 @@ const projects = [
     //     description: 'Professional gaming chair ecommerce website to give gamers an edge above the competition',
     //     url: './raynor.html',
     //     isPublic: false
-    // },
-    {
-        projectId: 'optum',
-        title: 'Optum',
-        mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/optum-thumb@2x.jpg',
-        projectCoverImg: 'img/project--optum/optum--project-cover.jpg',
-        processCoverImg: 'img/project--optum/optum--process-cover.jpg',
-        description: 'A new digital healthcare service for life after COVID-19',
-        url: './optum.html',
-        isPublic: false
-    },
-    {
-        projectId: 'microsoft',
-        title: 'Microsoft',
-        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
-        projectCoverImg: 'img/project--raynor/microsoft--project-cover.jpg',
-        processCoverImg: 'img/project--raynor/microsoft--process-cover.jpg',
-        description: 'A new mixed reality experience for remote creative collaboration',
-        url: './microsoft.html',
-        isPublic: false
-    }
+    // }
 ];
 
 const publicProjects = projects.filter(project => project.isPublic == true);

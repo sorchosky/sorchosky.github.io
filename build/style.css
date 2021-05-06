@@ -961,6 +961,10 @@ header .navbar-toggler {
       .full-nav .navbar-nav {
         align-items: start;
         padding: 0 0 0 4em; } }
+    .full-nav .navbar-nav .nav-item h2 {
+      margin-bottom: .25em; }
+    .full-nav .navbar-nav .nav-item:last-child h2 {
+      margin-bottom: 0; }
     .full-nav .navbar-nav a.nav-link {
       color: #F1EBDC;
       opacity: 1;
@@ -1235,6 +1239,8 @@ footer {
 .work-experience-item {
   border-bottom: 1px solid rgba(151, 158, 180, 0.2);
   padding: 3em 0; }
+  .work-experience-item h4 {
+    margin-top: 0; }
 
 .work-experience-meta {
   align-items: flex-start;

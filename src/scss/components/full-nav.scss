@@ -80,6 +80,15 @@
             padding: 0 0 0 4em;
         }
 
+        .nav-item {
+            h2 {
+                margin-bottom: .25em;
+            }
+            &:last-child h2 {
+                margin-bottom: 0;
+            }
+        }
+
         a.nav-link {
             color: $offwhite;
             opacity: 1;

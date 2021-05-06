@@ -6,6 +6,10 @@
 .work-experience-item {
     border-bottom: 1px solid rgba($gray, .2);
     padding: 3em 0;
+
+    h4 {
+        margin-top: 0;
+    }
 }
 
 .work-experience-meta {
