@@ -300,18 +300,18 @@ const projects = [
         processCoverImg: 'img/project--optum/optum--process-cover.jpg',
         description: 'A new digital healthcare service for life after COVID-19',
         url: './optum.html',
-        isPublic: false
+        isPublic: true
     },
     {
         projectId: 'microsoft',
         title: 'Microsoft',
         mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
-        projectCoverImg: 'img/project--raynor/microsoft--project-cover.jpg',
-        processCoverImg: 'img/project--raynor/microsoft--process-cover.jpg',
+        projectCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
+        processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
-        isPublic: false
+        isPublic: true
     },
     {
         projectId: 'tempur-pedic',
