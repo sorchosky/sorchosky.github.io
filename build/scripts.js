@@ -456,17 +456,14 @@ $(document).ready(function(){
         pauseOnFocus: false,
         pauseOnHover: false,
         speed: 2000
-    });
+    })
 });
 
-$(document).ready(function(){
-    $('.slick--visual-design').slick({
+$(document).ready(function() {
+    $('.full-width-slider').slick({
+        arrows: false,
         autoplay: true,
-        autoplaySpeed: 10000,
-        arrows: true,
-        fade: true,
-        speed: 1000,
-        prevArrow: $(".visual-design-slides__prev"),
-        nextArrow: $(".visual-design-slides__next")
+        autoplaySpeed: 7000,
+        speed: 1000
     });
-});
+})

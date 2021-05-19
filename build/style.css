@@ -1010,6 +1010,9 @@ header .navbar-toggler {
   opacity: 1;
   height: 100vh; }
 
+.full-width-slider img {
+  padding: 1em; }
+
 /* JUMBOTRON */
 .jumbotron {
   align-items: center;
@@ -1265,6 +1268,9 @@ footer {
 /* GLOBAL */
 html {
   scroll-behavior: smooth; }
+
+.container-fluid {
+  max-width: 75rem; }
 
 .row {
   margin: 3em auto; }

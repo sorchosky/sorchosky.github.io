@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.container-fluid {
+    max-width: 75rem;
+}
+
 .row {
     margin: 3em auto;
 }
