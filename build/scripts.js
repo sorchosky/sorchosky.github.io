@@ -311,7 +311,7 @@ const projects = [
         processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
-        isPublic: true
+        isPublic: false
     },
     {
         projectId: 'tempur-pedic',
