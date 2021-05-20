@@ -106,46 +106,46 @@ navbarToggle.onclick = function() {
     navbarToggle.classList.toggle("is-active");
     fullNav.classList.toggle("active");
 }
-// pageFade.js
+// // pageFade.js
 
-function fadeInPage() {
-    if (!window.AnimationEvent) { 
-        return; 
-    }
-    const fader = document.getElementById("fader");
-    fader.classList = 'fade-out';
-}
+// function fadeInPage() {
+//     if (!window.AnimationEvent) { 
+//         return; 
+//     }
+//     const fader = document.getElementById("fader");
+//     fader.classList = 'fade-out';
+// }
 
-document.addEventListener('DOMContentLoaded', function() {
-    if (!window.AnimationEvent) { 
-        return; 
-    }
-    let anchors = document.getElementsByTagName('a');
-    for (let i in anchors) {
-        if (anchors[i].hostname !== window.location.hostname || anchors[i].pathname === window.location.pathname) {
-            continue;
-        }
-        anchors[i].addEventListener('click', function(e) {
-            const fader = document.getElementById('fader');
-            let anchor = e.currentTarget;
-            let listener = function() {
-                window.location = anchor.href;
-                fader.removeEventListener('animationend', listener);
-            }
-            fader.addEventListener('animationend', listener);
-            e.preventDefault();
-            fader.classList = 'fade-in';
-        });
-    }
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     if (!window.AnimationEvent) { 
+//         return; 
+//     }
+//     let anchors = document.getElementsByTagName('a');
+//     for (let i in anchors) {
+//         if (anchors[i].hostname !== window.location.hostname || anchors[i].pathname === window.location.pathname) {
+//             continue;
+//         }
+//         anchors[i].addEventListener('click', function(e) {
+//             const fader = document.getElementById('fader');
+//             let anchor = e.currentTarget;
+//             let listener = function() {
+//                 window.location = anchor.href;
+//                 fader.removeEventListener('animationend', listener);
+//             }
+//             fader.addEventListener('animationend', listener);
+//             e.preventDefault();
+//             fader.classList = 'fade-in';
+//         });
+//     }
+// });
 
-window.addEventListener('pageshow', function (event) {
-    if (!event.persisted) {
-        return;
-    }
-    const fader = document.getElementById('fader');
-    fader.classList.remove('fade-in');
-});
+// window.addEventListener('pageshow', function (event) {
+//     if (!event.persisted) {
+//         return;
+//     }
+//     const fader = document.getElementById('fader');
+//     fader.classList.remove('fade-in');
+// });
 
 // prevNextProjects.js
 
@@ -381,8 +381,8 @@ let projectLoop = () => {
         if (isPublic) {
             // html with project properties
             projectListItem.innerHTML = `
-            <a href="` + url + `" class="col-12">
-                <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
+            <a href="` + url + `" class="project-list-item__a col-12">
+                <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
                 <div class="project-list-item__text col-12 col-md-8">
@@ -395,7 +395,7 @@ let projectLoop = () => {
             projectListItem.classList.add("project--disabled");
             projectListItem.innerHTML = `
             <div class="col-12">
-                <img src="` + mobileImg + `" alt="` + title + `" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
+                <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
                 <div class="project-list-item__text col-12 col-md-8">
@@ -440,12 +440,9 @@ let revealFromBottom = {
     opacity: null
 };
 
-ScrollReveal().reveal('.jumbotron__img', {
-    delay: 400
-});
-
-ScrollReveal().reveal('.jumbotron__h1', {
-    delay: 700
+ScrollReveal().reveal('.reveal', {
+    delay: 300,
+    reset: true
 });
 $(document).ready(function(){
     $('.slick--autoplay').slick({

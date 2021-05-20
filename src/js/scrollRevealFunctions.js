@@ -6,10 +6,7 @@ let revealFromBottom = {
     opacity: null
 };
 
-ScrollReveal().reveal('.jumbotron__img', {
-    delay: 400
-});
-
-ScrollReveal().reveal('.jumbotron__h1', {
-    delay: 700
+ScrollReveal().reveal('.reveal', {
+    delay: 300,
+    reset: true
 });
