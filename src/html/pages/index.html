@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@@include(../components/head.html)
+@@include('../components/head.html', {
+    "title": "Steve Orchosky"
+})
 
 <body onload="projectLoop();">
-    <header id="header"></header>
+    @@include('../components/header.html')
 
     <main class="container">
         <!-- Cover -->
@@ -55,58 +57,8 @@
 
     </main>
 
-    <!-- Footer -->
-    <div class="container">
-        <div class="row">
-            <h2 class="col-12">Let&rsquo;s work together</h2>
-            <p class="col-12 col-lg-8 offset-lg-2">I&rsquo;m currently looking for fulltime and contract opportunities upon graduating from my Master&rsquo;s of Human-Computer Interaction from Carnegie Mellon. Please reach out to me at <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a> to discuss projects, or just to say hello.</p>
-        </div>
-    </div>
+    @@include('../components/footer.html')
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-5">
-                    <a href="./" class="footer-brand">
-                        <h4>Steve Orchosky</h4>
-                    </a>
-                    <p>Interaction Designer &amp; Digital Strategist</p>
-                </div>
-                <div class="col-12 col-sm-8 col-lg-4">
-                    <h4>Contact</h4>
-                    <a href="mailto:steve@steveorchosky.com">steve@steveorchosky.com</a>
-                </div>
-                <div class="col-12 col-sm-4 col-lg-3">
-                    <h4>Social</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a class="social-icon" href="https://www.linkedin.com/in/steve-orchosky/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-icon" href="https://dribbble.com/sorchosky" target="_blank">
-                                <i class="fab fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-icon" href="https://www.instagram.com/sorchosky/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Javascript -->
-    <!-- Vendor Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- Custom Script -->
-    <script src="scripts.js"></script>
+    @@include('../components/source.html')
 </body>
 </html>

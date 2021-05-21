@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../components/head.html', {
+    "title": "Projects | Steve Orchosky"
+})
+
+<body onload="projectLoop();">
+    
+    @@include('../components/header.html')
+
+    <main class="container">
+        <!-- Cover -->
+        <div class="jumbotron">
+
+            <div class="">
+                <h1 class="h1 text-left">Projects</h1>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <section class="projects">
+            <ul class="row position-relative project-list" id="projectList">
+
+            </ul>
+        </section>
+    </main>
+
+    @@include('../components/footer.html')
+
+    @@include('../components/source.html')
+</body>
+</html>

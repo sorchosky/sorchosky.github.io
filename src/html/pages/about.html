@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../components/head.html', {
+    "title": "About | Steve Orchosky"
+})
+
+<body onload="workLoop();">
+    @@include('../components/header.html')
+
+    <main class="container">
+
+        <!-- About -->
+        <section class="row d-flex align-items-center reveal">
+            <img class="d-block d-lg-none my-5 col-12" src="img/steve-portrait--mobile.jpg" alt="Portrait of Steve">
+            <!-- Cover -->
+            <div class="jumbotron">
+                <h1 class="jumbotron__h1">A little more about me</h1>
+            </div>
+            <img class="d-none d-lg-block position-relative col-12 col-md-5 offset-md-7 opacity-70 about-portrait--desktop" src="img/steve-portrait.jpg" alt="Portrait of Steve">
+        </section>
+
+        <!-- Skills -->
+        <section class="row position-relative d-flex align-items-center">
+            <div>
+                <div class="col-12 col-lg-10">
+                    <h6 class="eyebrow">Skills</h6>
+                    <h2>My goal is building high-quality products and services</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-2">
+                    <p class="p p--large">Through my professional experience and Master of Human-Computer Interaction from Carnegie Mellon, I have developed a wide range of skills in user-centered research, generative ideation, information architecture, prototyping, UI design, front-end development, and consulting. Below are some of the most loved tools in my toolkit.</p>
+                    <div class="row no-gutters">
+                        <div class="col col-12 col-md-6">
+                            <h5>Design</h5>
+                            <p>Figma, Invision, Photoshop, Illustrator, Animate, InDesign, After Effects, Premiere</p>
+                        </div>
+                        <div class="col col-12 col-md-6">
+                            <h5>Development:</h5>
+                            <p>HTML, CSS, SCSS, JavaScript, jQuery, Wordpress (PHP, mySQL), Python</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="row position-relative d-flex align-items-center">
+            <div>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <h6 class="eyebrow">Professional Experience</h6>
+                        <h2>I am an interaction designer &amp; digital strategist with over five years of experience</h2>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex align-items-start justify-content-md-end">
+                        <a class="btn btn-outline-secondary" href="./steve_orchosky_resume.pdf" target="_blank">View Print-Friendly Resume</a>
+                    </div>
+                </div>
+                <div class="work-experience" id="workExperience">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="row position-relative d-flex align-items-center">
+            <div>
+                <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Education</h6>
+                <h2>I&rsquo;m known for unrelentless learning in school and industry</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-2">
+                    <p class="p p--large">My professional journey starts at the University of Cincinnati where I had intended to become an audio engineer. Through Electronic Media, I learned about the interaction design and user experience industry, and I decided to make that my specialization. Five years later, I returned to school to pursue one of the most reputable UX design degrees available, the Master of Human-Computer Interaction at Carnegie Mellon.</p>
+                    <div class="row no-gutters">
+                        <div class="col col-12 col-md-6">
+                            <h4>Master of Human-Computer Interaction</h4>
+                            <p>Carnegie Mellon University<br>Graduating AUG 2021</p>
+                        </div>
+                        <div class="col col-12 col-md-6">
+                            <h4>BFA in Electronic Media</h4>
+                            <p>University of Cincinnati<br>Received APR 2015</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @@include('../components/footer.html')
+
+    @@include('../components/source.html')
+</body>
+</html>
