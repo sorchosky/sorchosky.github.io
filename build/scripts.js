@@ -234,7 +234,7 @@ let prevNextProjects = () => {
 }
 
 // ##########################
-// Process Pages
+// MiniNav (Process Pages)
 // ##########################
 
 function miniNav() {
@@ -282,8 +282,8 @@ function miniNav() {
     
     // Render the miniNav
     miniNav.innerHTML = `
-    <a href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">Prev Process</p></a>
-    <a href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">Next Process</p></a>
+    <a href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">` + prevProject.title + `</p></a>
+    <a href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">` + nextProject.title + `</p></a>
     `;
 }
 
@@ -329,7 +329,7 @@ const projects = [
     },
     {
         projectId: 'kst',
-        title: 'Kelly Strayhorn Theater',
+        title: 'Kelly Strayhorn',
         mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
         projectCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',

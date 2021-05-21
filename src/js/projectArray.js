@@ -37,7 +37,7 @@ const projects = [
     },
     {
         projectId: 'kst',
-        title: 'Kelly Strayhorn Theater',
+        title: 'Kelly Strayhorn',
         mobileImg: 'img/thumbnails/kst-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/kst-thumb@2x.jpg',
         projectCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',
