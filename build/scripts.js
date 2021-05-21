@@ -303,17 +303,6 @@ const projects = [
         isPublic: true
     },
     {
-        projectId: 'microsoft',
-        title: 'Microsoft',
-        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
-        projectCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
-        processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
-        description: 'A new mixed reality experience for remote creative collaboration',
-        url: './microsoft.html',
-        isPublic: false
-    },
-    {
         projectId: 'tempur-pedic',
         title: 'Tempur-Pedic',
         mobileImg: 'img/thumbnails/tempur-pedic-thumb--mobile@2x.jpg',
@@ -345,6 +334,17 @@ const projects = [
         description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
         isPublic: true
+    },
+    {
+        projectId: 'microsoft',
+        title: 'Microsoft',
+        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
+        projectCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
+        processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
+        description: 'A new mixed reality experience for remote creative collaboration',
+        url: './microsoft.html',
+        isPublic: false
     },
     // {
     //     projectId: 'raynor',
