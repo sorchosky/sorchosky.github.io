@@ -41,31 +41,18 @@
                         <div class="col col-12 offset-md-1 col-md-4">
                             <h4>Additional Team</h4>
                             <ul class="full-team__ul">
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Gabbi Laborwit</p>
-                                    <h6 class="full-team__h6">UX Researcher</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">John Plunkett</p>
-                                    <h6 class="full-team__h6">Business Strategist</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Nobuhiko Morikawa</p>
-                                    <h6 class="full-team__h6">Business Strategist</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Guanzhao Li</p>
-                                    <h6 class="full-team__h6">Prototyper</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Tarang Shah</p>
-                                    <h6 class="full-team__h6">Prototyper</h6>
-                                </li>
-                                <li class="full-team__li">
-                                    <p class="full-team__p">Uma Arunachalam</p>
-                                    <h6 class="full-team__h6">Prototyper</h6>
-                                </li>
+
+                                @@loop('../components/team-li.html', [
+                                    { "name": "Gabbi Laborwit", "title": "UX Researcher" },
+                                    { "name": "John Plunkett", "title": "Business Strategist" },
+                                    { "name": "Nobuhiko Morikawa", "title": "Business Strategist" },
+                                    { "name": "Guanzhao Li", "title": "Prototyper" },
+                                    { "name": "Tarang Shah", "title": "Prototyper" },
+                                    { "name": "Uma Arunachalam", "title": "Prototyper" }
+                                ])
+                                
                             </ul>
+
                         </div>
                     </div>
                 </div>
