@@ -453,6 +453,7 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
         arrows: false,
         fade: true,
+        lazyLoad: 'ondemand',
         pauseOnFocus: false,
         pauseOnHover: false,
         speed: 2000
@@ -464,6 +465,8 @@ $(document).ready(function() {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 7000,
+        centerMode: true,
+        lazyLoad: 'ondemand',
         speed: 1000
     });
 })
