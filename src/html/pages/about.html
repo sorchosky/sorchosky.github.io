@@ -5,19 +5,19 @@
     "title": "About | Steve Orchosky"
 })
 
-<body onload="workLoop();">
+<body onload="workLoop();" id="about">
     @@include('../components/header.html')
 
     <main class="container">
 
         <!-- About -->
-        <section class="row d-flex align-items-center reveal">
+        <section class="row position-relative d-flex align-items-center reveal">
             <!-- Cover -->
             <div class="jumbotron">
                 <h1 class="jumbotron__h1">A little more about me</h1>
             </div>
             <img class="d-block d-lg-none my-5 col-12" srcset="img/steve-portrait--mobile@2x.jpg 2x, img/steve-portrait--mobile.jpg 1x" src="img/steve-portrait--mobile.jpg" alt="Portrait of Steve">
-            <img class="d-none d-lg-block position-relative col-12 col-md-5 offset-md-7 opacity-70 about-portrait--desktop" srcset="img/steve-portrait@2x.jpg 2x, img/steve-portrait.jpg 1x" src="img/steve-portrait.jpg" alt="Portrait of Steve">
+            <img class="d-none d-lg-block position-absolute col-12 col-md-5 offset-md-7 opacity-70 about-portrait--desktop" srcset="img/steve-portrait@2x.jpg 2x, img/steve-portrait.jpg 1x" src="img/steve-portrait.jpg" alt="Portrait of Steve">
         </section>
 
         <!-- Skills -->

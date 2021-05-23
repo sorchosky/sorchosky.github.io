@@ -845,9 +845,6 @@ a {
 img {
   box-sizing: border-box; }
 
-.about-portrait--desktop {
-  margin-top: -40.5em; }
-
 .video-embed {
   background-color: blue;
   height: 20em;
@@ -1239,6 +1236,12 @@ html {
 
 section.row {
   margin: 6em 0; }
+
+#about .jumbotron {
+  height: auto; }
+  @media (min-width: 991.98px) {
+    #about .jumbotron {
+      height: 80vh; } }
 
 /* PROJECTS */
 @media (min-width: 767.98px) {
