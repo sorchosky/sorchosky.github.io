@@ -344,9 +344,20 @@ const projects = [
         mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
         projectCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
-        processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
+        processCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
+        isPublic: false
+    },
+    {
+        projectId: 'construction-junction',
+        title: 'Construction Junction',
+        mobileImg: 'img/thumbnails/cj-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/cj-thumb@2x.jpg',
+        projectCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
+        processCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
+        description: 'Design system and mobile app prototype for inventory management',
+        url: './construction-junction.html',
         isPublic: false
     },
     // {
@@ -384,7 +395,7 @@ let projectLoop = () => {
         if (isPublic) {
             // html with project properties
             projectListItem.innerHTML = `
-            <a href="` + url + `" class="project-list-item__a col-12">
+            <a href="` + url + `" class="project-list-item__a col-12 p-0">
                 <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
@@ -397,7 +408,7 @@ let projectLoop = () => {
             // html with project properties
             projectListItem.classList.add("project--disabled");
             projectListItem.innerHTML = `
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>

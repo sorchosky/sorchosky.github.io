@@ -52,9 +52,20 @@ const projects = [
         mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
         desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
         projectCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
-        processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
+        processCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
+        isPublic: false
+    },
+    {
+        projectId: 'construction-junction',
+        title: 'Construction Junction',
+        mobileImg: 'img/thumbnails/cj-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/cj-thumb@2x.jpg',
+        projectCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
+        processCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
+        description: 'Design system and mobile app prototype for inventory management',
+        url: './construction-junction.html',
         isPublic: false
     },
     // {

@@ -19,7 +19,7 @@ let projectLoop = () => {
         if (isPublic) {
             // html with project properties
             projectListItem.innerHTML = `
-            <a href="` + url + `" class="project-list-item__a col-12">
+            <a href="` + url + `" class="project-list-item__a col-12 p-0">
                 <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
@@ -32,7 +32,7 @@ let projectLoop = () => {
             // html with project properties
             projectListItem.classList.add("project--disabled");
             projectListItem.innerHTML = `
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <img src="` + mobileImg + `" alt="` + title + `" loading="lazy" class="img-fluid col-12 d-block d-lg-none project-list-item__img">
                 <div class="img-fluid col-8 d-none d-lg-block project-list-item__img" style="background-image: url(` + desktopImg + `);">
                 </div>
