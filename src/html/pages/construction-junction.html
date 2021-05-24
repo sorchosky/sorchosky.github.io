@@ -20,7 +20,7 @@
         
         <div id="mini-nav"></div>
         
-        <img class="img-fluid" src="./img/project--tempur-pedic/tempur-pedic--project-cover@2x.jpg" loading="lazy" alt="">
+        <img class="img-fluid" srcset="./img/project--construction-junction/cj--project-cover@2x.png 2x, ./img/project--construction-junction/cj--project-cover.png 1x" src="./img/project--construction-junction/cj--project-cover@2x.png" loading="lazy" alt="">
 
         <!-- About the Project -->
         <section class="row position-relative d-flex align-items-center">
@@ -30,7 +30,7 @@
                 <h2>Prototyping a digital service for cataloging donations</h2>
                 </div>
                 <div class="col-12 col-lg-8 offset-lg-2">
-                    <p class="p p--large">Description</p>
+                    <p class="p p--large">For our first project in Interaction Design Studio II, we designed a mobile digital service for Construction Junction, a non-profit that supports conservation by accepting and reselling used furniture and building materials. While the assignment was to create a customer-facing app, our research showed greater value through instead creating an employee inventory management system that allows for easy cataloging of new donation items.</p>
                     <div class="row two-col-no-padding">
                         <div class="col col-12 col-md-7">
                             <h4>My Role</h4>
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="./img/project--tempur-pedic/tempur-pedic_mockup@2x.jpg" alt="Tempur-Pedic landing page mockup" loading="lazy" class="col img-fluid">
+                <!-- <img src="./img/project--tempur-pedic/tempur-pedic_mockup@2x.jpg" alt="Tempur-Pedic landing page mockup" loading="lazy" class="col img-fluid"> -->
             </div>
         </section>
 
@@ -60,28 +60,100 @@
         <section class="row position-relative d-flex align-items-center" id="background">
             <div>
                 <div class="col-12 col-md-10">
-                <h6 class="eyebrow">Background</h6>
-                <h2>Making it easier for consumers to shop online for one of America&rsquo;s favorite mattresses</h2>
+                    <h6 class="eyebrow">Background</h6>
+                    <h2>Figuring out what our client would truly need</h2>
                 </div>
                 <div class="col-12 col-lg-8 offset-lg-2">
-                    <p>The core relationship between Icon Marketing and Tempur-Pedic is to support Tempur-Pedic&rsquo;s retail network with any and all of their marketing needs. One component of this is to create web pages to showcase the brand and products offered by each retailer. These pages serve as landing pages for co-branded digital banner ads and eblasts between the retailer and Tempur-Pedic.</p>
-                    <p>Through my employment at Icon, working on brand page creative was a majority of my job. When I arrived, the brand page creation process ended at delivering artwork via PDFs or PSD files to retailers, who then would ideally need to find a developer that can build the page to our specs on their website. The reality was that the outsourcing developers left Icon out of the loop, so there was nobody to ensure the website was built to brand standards. Much like in a game of telephone, this meant the final developed version of my brand pages varied greatly in development quality, if developed at all.</p>
+                    <p>When researching an app design concept for Construction Junction, our initial goal was to create a customer-facing application that would create a remote way for customers to browse products. To first understand the brand and company mission, our team first looked at the website and social media and created a Tone of Voice model as a means of objectively creating for the brand.</p>
+                    <p>We based our assessment on Nielsen Norman Group&rsquo;s <a href="https://www.nngroup.com/articles/tone-of-voice-dimensions/" target="_blank" rel="noreferrer">Four Dimensions of Tone of Voice.</a></p>
+                </div>
+                <figure class="col-12">
+                    <img src="./img/project--construction-junction/tone-dimensions-for-construction-junction.png" alt="Tone Dimensions for Construction Junction" class="img-fluid">
+                    <figcaption>With a focus on community, two of the standout traits we discovered for public media were to show Construction Junction as &lsquo;casual&rsquo; and &lsquo;enthusiastic&rsquo;</figcaption>
+                </figure>
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <p>As part of our research, our team also created a stakeholder map. We wanted to learn about all of the key players and understand if there was a specific segment that we wanted to focus on when creating our app.</p>
+                </div>
+                <figure class="col-12">
+                    <img src="./img/project--construction-junction/stakeholder-map.png" alt="Tone Dimensions for Construction Junction" class="img-fluid">
+                    <figcaption>While some donors interact with full time staff, volunteers and occasionally delivery crew are front of house for donation collection</figcaption>
+                </figure>
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <p>We were surprised to learn of many different volunteer initiatives that Construction Junction supports, such as a Goodwill Job Training Partnership, to help people with barriers to employment to help get work experience. However, this also revealed that there was a fairly high rate of churn among volunteers. Knowing this, we set our sights on creating a mobile volunteer assistant.</p>
                 </div>
             </div>
-            <img src="./img/process/tempur-pedic/value-transfer.svg" loading="lazy" class="col my-4 img-fluid" alt="Tempur-Pedic - Icon - Retailer | Service Ecosystem">
+        </section>
+
+        <!-- Low Fidelity Prototyping -->
+        <section class="row position-relative d-flex align-items-center">
+            <div>
+                <div class="col-12 col-md-10">
+                    <h6 class="eyebrow">Prototyping</h6>
+                    <h2>Initial sketching, identifying objectives, and creating the main user flow</h2>
+                </div>
+            </div>
+            <p class="col-12 col-lg-8 offset-lg-2">Our team took a distributed parallel prototyping approach at the low-fidelity stage. Each of us made a separate wireframe of our own vision for the app, resulting in four examples that we could compare and contrast.</p>
+            <!-- Collage of low-fi wireframes -->
+            <figure>
+                <figcaption>My initial sketches for a user flow of cataloging new inventory donations</figcaption>
+            </figure>
+            <p class="col-12 col-lg-8 offset-lg-2">Based on our team critique and through user testing with other classmates, we decided that inventory cataloging and management was the biggest area to add value for volunteers. We combined our approaches and established a single user flow that focused on cataloging.</p>
+            <!-- Final low-fi user flow -->
+            <figure>
+                <figcaption>We cut and pasted the most effective pieces of each of our four directions</figcaption>
+            </figure>
+            <p class="col-12 col-lg-8 offset-lg-2">We next began digitizing our sketches in Figma. To maximize efficiency, we leveraged design patterns from our team’s collective experiences with other apps to inspire how to lay out some different features.</p>
+            <!-- Category mid-fi next to Door Dash -->
+            <figure>
+                <figcaption>The category filters at the top of the Inventory page were inspired by DoorDash’s homepage food category menu.</figcaption>
+            </figure>
+            <!-- Measurement mid-fi next to Door Dash -->
+            <figure>
+                <figcaption>The measurement outlines come from Apple’s pre-installed Measure app.</figcaption>
+            </figure>
+            <p class="col-12 col-lg-8 offset-lg-2">Refining the low fidelity prototype and critique in class raised a lot of questions around the types of access that volunteers should have access to versus full time employees. Critique also encouraged questions around what data needs to be captured as new donations are processed, such as potential damages of used objects.</p>
+        </section>
+
+        <!-- Low Fidelity Prototyping -->
+        <section class="row position-relative d-flex align-items-center">
+            <div class="col-12 col-md-10">
+                <h6 class="eyebrow">Visual Design</h6>
+                <h2>Applying the client tone of voice to brand the service</h2>
+            </div>
+            <p class="col-12 col-lg-8 offset-lg-2">Once our mid fidelity designs were in place, we began discussing how to include color and brand into the design. In our design for class, we created a colorful interface that emulated the paint texture from their website and social media.</p>
+            <!-- Screenshot of final submitted design frames -->
+            <figure>
+
+            </figure>
+            <p class="col-12 col-lg-8 offset-lg-2">When designing our high fidelity, we broke the user flow of our mid-fidelity design into four sections. I was responsible for the Inventory landing screen and Item Review. As we were working, we leveraged Figma&rsquo;s Color and Text Styles for consistency.</p>
+            <p class="col-12 col-lg-8 offset-lg-2">However, for many UI elements, we were copying and pasting from each others’ work. This made it challenging for individuals to make edits that could be applied consistently across the entire app. While it was time consuming, repeated viewing of the prototype made slight alignment errors apparent, and we created one cohesive prototype design which we could pitch to the class.</p>
+            <!-- Submitted prototype (video with link to actual?) -->
+            <figure>
+
+            </figure>
         </section>
 
         <!-- Reflection -->
         <section class="row position-relative d-flex align-items-center">
-            <div>
-                <div class="col-12 col-md-10">
+            <div class="col-12 col-md-10">
                 <h6 class="eyebrow">Reflection</h6>
-                <h2>Looking back on the work</h2>
-                </div>
-                <div class="col-12 col-lg-8 offset-lg-2">
-                    <p>Lorem Ipsum Dolor</p>
-                </div>
+                <h2>Approaching the design as a system, not just a product</h2>
             </div>
+            <p class="col-12 col-lg-8 offset-lg-2">After the project, I reflected on how this process could have been improved. About a month after the project, I learned at Config 2021 how robust the variable components can be when creating a design system for a mobile application. I realized that not using these components properly was creating barriers to quicker iteration.</p>
+            <!-- Atomic Design flow chart -->
+            <figure>
+                <figcaption>Courtesy of Brad Frost. Instead of working on the app screen-to-screen, a more efficient way would have been to scale up components, starting at the atomic level</figcaption>
+            </figure>
+            <p class="col-12 col-lg-8 offset-lg-2">In my redesign, I took an Atomic Design approach by starting with the smallest components I knew I would need and working my way up to more complex components and layouts.</p>
+            <!-- Screenshot of Design System -->
+            <figure>
+                <figcaption>New Construction Junction design system</figcaption>
+            </figure>
+            <p class="col-12 col-lg-8 offset-lg-2">I used this system to create a new version of the high fidelity prototype. Since this was a new project I would take on solo, I also used this chance to put my own take on the brand, simplifying to a utility-focus since this would be an employee-facing tool instead of a public interface.</p>
+            <!-- Video of final design (link to prototype?) -->
+            <figure>
+                <figcaption>Final UI design prototype</figcaption>
+            </figure>
         </section>
 
         <section class="projects row prev-next" id="prevNextProjects">
