@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.mobile-slider').slick({
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 7000,
         centerMode: true,
