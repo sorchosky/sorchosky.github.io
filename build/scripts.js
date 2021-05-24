@@ -480,4 +480,37 @@ $(document).ready(function() {
         lazyLoad: 'ondemand',
         speed: 1000
     });
-})
+});
+
+$(document).ready(function() {
+    $('.mobile-slider').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        centerMode: true,
+        lazyLoad: 'ondemand',
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 4,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
+    });
+});
