@@ -2,39 +2,14 @@
 .jumbotron {
     align-items: center;
     display: flex;
-    height: 80vh;
-    justify-content: flex-start;
-    margin-top: 0;
-    position: relative;
-}
-
-.project-page .jumbotron {
     height: auto;
     justify-content: flex-start;
-    margin: 6em 0 2em;
+    margin-top: 0;
+    padding: 8em 0 2em;
+    position: relative;
 
-    @include md {
-        max-height: 50vh;
-        height: 50vw;
+    @include lg {
+        height: 80vh;
+        padding: 0;
     }
-}
-
-.jumbotron__text {
-    display: block;
-    z-index: 5;
-}
-
-.jumbotron__h1 {
-    z-index: 5;
-}
-
-.jumbotron__img {
-    height: 70vw;
-    max-height: 70vh;
-    margin: auto;
-    object-fit: cover;
-    opacity: .3;
-    position: absolute;
-    width: 70vw;
-    max-width: 70vh;
 }

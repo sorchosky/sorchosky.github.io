@@ -1,9 +1,0 @@
-#about {
-    .jumbotron {
-        height: auto;
-
-        @include lg {
-            height: 80vh;
-        }
-    }
-}

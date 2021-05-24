@@ -973,37 +973,15 @@ header .navbar-toggler {
 .jumbotron {
   align-items: center;
   display: flex;
-  height: 80vh;
-  justify-content: flex-start;
-  margin-top: 0;
-  position: relative; }
-
-.project-page .jumbotron {
   height: auto;
   justify-content: flex-start;
-  margin: 6em 0 2em; }
-  @media (min-width: 767.98px) {
-    .project-page .jumbotron {
-      max-height: 50vh;
-      height: 50vw; } }
-
-.jumbotron__text {
-  display: block;
-  z-index: 5; }
-
-.jumbotron__h1 {
-  z-index: 5; }
-
-.jumbotron__img {
-  height: 70vw;
-  max-height: 70vh;
-  margin: auto;
-  -o-object-fit: cover;
-  object-fit: cover;
-  opacity: .3;
-  position: absolute;
-  width: 70vw;
-  max-width: 70vh; }
+  margin-top: 0;
+  padding: 8em 0 2em;
+  position: relative; }
+  @media (min-width: 991.98px) {
+    .jumbotron {
+      height: 80vh;
+      padding: 0; } }
 
 #mini-nav {
   align-items: center;
@@ -1236,12 +1214,6 @@ html {
 
 section.row {
   margin: 6em 0; }
-
-#about .jumbotron {
-  height: auto; }
-  @media (min-width: 991.98px) {
-    #about .jumbotron {
-      height: 80vh; } }
 
 /* PROJECTS */
 @media (min-width: 767.98px) {
