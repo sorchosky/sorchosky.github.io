@@ -55,7 +55,7 @@ const projects = [
         processCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
         description: 'A new mixed reality experience for remote creative collaboration',
         url: './microsoft.html',
-        isPublic: false
+        isPublic: true
     },
     {
         projectId: 'construction-junction',
@@ -66,19 +66,8 @@ const projects = [
         processCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
         description: 'Design system and mobile app prototype for inventory management',
         url: './construction-junction.html',
-        isPublic: false
-    },
-    // {
-    //     projectId: 'raynor',
-    //     title: 'Raynor Gaming',
-    //     mobileImg: 'img/thumbnails/raynor-thumb--mobile@2x.jpg',
-    //     desktopImg: 'img/thumbnails/raynor-thumb@2x.jpg',
-    //     projectCoverImg: 'img/project/raynor/raynor--project-cover.jpg',
-    //     processCoverImg: 'img/process/raynor/raynor--process-cover.jpg',
-    //     description: 'Professional gaming chair ecommerce website to give gamers an edge above the competition',
-    //     url: './raynor.html',
-    //     isPublic: false
-    // }
+        isPublic: true
+    }
 ];
 
 const publicProjects = projects.filter(project => project.isPublic == true);

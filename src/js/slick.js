@@ -30,7 +30,7 @@ $(document).ready(function() {
         centerMode: true,
         lazyLoad: 'ondemand',
         infinite: true,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 4,
         responsive: [
             {
