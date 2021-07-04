@@ -13,7 +13,9 @@ $(document).ready(function(){
 
 $(document).ready(function() {
     $('.full-width-slider').slick({
-        arrows: false,
+      arrows: true,
+      prevArrow: $('.visual-design-slides__prev'),
+      nextArrow: $('.visual-design-slides__next'),
         autoplay: true,
         autoplaySpeed: 7000,
         centerMode: true,
