@@ -1,0 +1,42 @@
+.visual-design-slides__controls {
+    margin: 0 0 1em;
+    position: relative;
+    right: 0;
+}
+
+// Prototypes
+
+.prototype {
+    padding-bottom: 3em;
+}
+
+.prototype__a {
+    text-decoration: none;
+    transition: all 0s ease-in-out !important;
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+
+        h5,
+        p {
+            color: $blue;
+        }
+
+        .prototype__img {
+            opacity: 1;
+        }
+    }
+
+    .prototype__img {
+        padding: 0 0 1em;
+        opacity: .7;
+        transition: opacity .2s ease-in-out;
+    }
+
+    h5,
+    p {
+        text-decoration: none;
+        transition: color .2s ease-in-out;
+    }
+}

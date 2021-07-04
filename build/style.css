@@ -1286,3 +1286,26 @@ section.row {
   margin: 0 0 1em;
   position: relative;
   right: 0; }
+
+.prototype {
+  padding-bottom: 3em; }
+
+.prototype__a {
+  text-decoration: none;
+  transition: all 0s ease-in-out !important; }
+  .prototype__a:hover {
+    color: #007bff;
+    text-decoration: none; }
+    .prototype__a:hover h5,
+    .prototype__a:hover p {
+      color: #007bff; }
+    .prototype__a:hover .prototype__img {
+      opacity: 1; }
+  .prototype__a .prototype__img {
+    padding: 0 0 1em;
+    opacity: .7;
+    transition: opacity .2s ease-in-out; }
+  .prototype__a h5,
+  .prototype__a p {
+    text-decoration: none;
+    transition: color .2s ease-in-out; }
