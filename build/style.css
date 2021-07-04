@@ -995,30 +995,6 @@ header .navbar-toggler {
   display: flex;
   justify-content: space-between;
   position: relative; }
-  #mini-nav a {
-    padding: 1em;
-    margin: 0;
-    text-decoration: none; }
-    #mini-nav a p {
-      margin: 0; }
-  #mini-nav .prev-label:before,
-  #mini-nav .next-label:after {
-    transition: margin .2s ease-in-out; }
-  #mini-nav .prev-label,
-  #mini-nav .next-label {
-    transition: margin .2s ease-in-out; }
-  #mini-nav .prev-label {
-    margin-left: -1em; }
-  #mini-nav .next-label {
-    margin-right: -1em; }
-  #mini-nav .prev-label:hover {
-    margin-left: -1.35em; }
-    #mini-nav .prev-label:hover:before {
-      margin-right: .875em; }
-  #mini-nav .next-label:hover {
-    margin-right: -1.35em; }
-    #mini-nav .next-label:hover:after {
-      margin-left: .875em; }
 
 .readmore {
   bottom: 1em;
@@ -1054,33 +1030,61 @@ header .navbar-toggler {
       .prev-next .project-list-item:nth-child(even) {
         margin-top: 0em; } }
 
+/* PREV-NEXT LINK */
+.prev-next-link {
+  margin: 0;
+  padding: 1em;
+  position: relative;
+  text-decoration: none; }
+
+.prev-link,
+.next-link {
+  transition: margin .2s ease-in-out; }
+
+.prev-link {
+  margin-left: -1em; }
+  .prev-link:hover {
+    margin-left: -1.5em; }
+    .prev-link:hover .prev-label:before {
+      margin-right: 1.25em; }
+
+.next-link {
+  margin-right: -1em; }
+  .next-link:hover {
+    margin-right: -1.5em; }
+    .next-link:hover .next-label:after {
+      margin-left: 1.25em; }
+
+/* PREV-NEXT LABEL */
 .prev-next-label {
-  padding: 0; }
+  margin: 0; }
 
 .prev-label:before {
   background-color: transparent;
+  border-bottom: .4em solid transparent;
+  border-right: 0.6em solid #007bff;
+  border-top: .4em solid transparent;
   content: '';
   display: inline-block;
-  margin-right: .5em;
-  width: 0;
   height: 0;
-  border-top: .4em solid transparent;
-  border-bottom: .4em solid transparent;
-  border-right: 0.6em solid #007bff; }
+  margin-right: .75em;
+  transition: margin .2s ease-in-out;
+  width: 0; }
 
 .next-label:before {
   display: none; }
 
 .next-label:after {
   background-color: transparent;
+  border-bottom: .4em solid transparent;
+  border-left: 0.6em solid #007bff;
+  border-top: .4em solid transparent;
   content: '';
   display: inline-block;
-  margin-left: .5em;
-  width: 0;
   height: 0;
-  border-top: .4em solid transparent;
-  border-bottom: .4em solid transparent;
-  border-left: 0.6em solid #007bff; }
+  margin-left: .75em;
+  transition: margin .2s ease-in-out;
+  width: 0; }
 
 /* FOOTER */
 footer {

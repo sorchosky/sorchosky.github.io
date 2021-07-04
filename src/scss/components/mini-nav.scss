@@ -4,48 +4,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-
-    a {
-        padding: 1em;
-        margin: 0;
-        text-decoration: none;
-
-        p {
-            margin: 0;
-        }
-    }
-
-    .prev-label:before,
-    .next-label:after {
-        transition: margin .2s ease-in-out;
-    }
-
-    .prev-label,
-    .next-label {
-        transition: margin .2s ease-in-out;
-    }
-
-    .prev-label {
-        margin-left: -1em;
-    }
-
-    .next-label {
-        margin-right: -1em;
-    }
-
-    .prev-label:hover {
-        margin-left: -1.35em;
-        &:before {
-            margin-right: .875em;
-        }
-    }
-
-    .next-label:hover {
-        margin-right: -1.35em;
-        &:after {
-            margin-left: .875em;
-        }
-    }
 }
 
 .readmore {

@@ -282,8 +282,8 @@ function miniNav() {
     
     // Render the miniNav
     miniNav.innerHTML = `
-    <a href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">` + prevProject.title + `</p></a>
-    <a href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">` + nextProject.title + `</p></a>
+    <a class="btn prev-next-link prev-link" href="` + prevProject.url + `"><p class="text-left eyebrow prev-next-label prev-label">` + prevProject.title + `</p></a>
+    <a class="btn prev-next-link next-link" href="` + nextProject.url + `"><p class=" text-right eyebrow prev-next-label next-label">` + nextProject.title + `</p></a>
     `;
 }
 
