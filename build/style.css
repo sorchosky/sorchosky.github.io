@@ -974,8 +974,21 @@ header .navbar-toggler {
   opacity: 1;
   height: 100vh; }
 
+.full-width-slider .slick-slide {
+  display: block;
+  width: auto;
+  max-height: 70vh; }
+
 .full-width-slider img {
-  padding: 1em; }
+  padding: 1em;
+  display: block;
+  -o-object-fit: contain;
+  object-fit: contain; }
+
+.slider-controls {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
 
 /* JUMBOTRON */
 .jumbotron {

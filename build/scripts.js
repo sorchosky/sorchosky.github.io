@@ -463,13 +463,13 @@ $(document).ready(function(){
 $(document).ready(function() {
     $('.full-width-slider').slick({
       arrows: true,
-      prevArrow: $('.visual-design-slides__prev'),
-      nextArrow: $('.visual-design-slides__next'),
-        autoplay: true,
-        autoplaySpeed: 7000,
-        centerMode: true,
-        lazyLoad: 'ondemand',
-        speed: 1000
+      prevArrow: $('.slick-slides__prev'),
+      nextArrow: $('.slick-slides__next'),
+      autoplay: true,
+      autoplaySpeed: 7000,
+      centerMode: true,
+      lazyLoad: 'ondemand',
+      speed: 1000
     });
 });
 
