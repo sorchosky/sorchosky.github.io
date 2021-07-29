@@ -295,6 +295,7 @@ function nextProcess() {
 // PROJECT ARRAY
 const projects = [
     {
+        
         projectId: 'optum',
         title: 'Optum',
         mobileImg: 'img/thumbnails/optum-thumb--mobile@2x.jpg',
@@ -303,6 +304,28 @@ const projects = [
         processCoverImg: 'img/project--optum/optum--process-cover.jpg',
         description: 'A new digital healthcare service for life after COVID-19',
         url: './optum.html',
+        isPublic: true
+    },
+    {
+        projectId: 'microsoft',
+        title: 'Microsoft',
+        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
+        projectCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
+        processCoverImg: 'img/project--microsoft/microsoft--process-cover.jpg',
+        description: 'A new mixed reality experience for remote creative collaboration',
+        url: './microsoft.html',
+        isPublic: true
+    },
+    {
+        projectId: 'construction-junction',
+        title: 'Construction Junction',
+        mobileImg: 'img/thumbnails/cj-thumb--mobile@2x.jpg',
+        desktopImg: 'img/thumbnails/cj-thumb@2x.jpg',
+        projectCoverImg: 'img/project--construction-junction/cj--process-cover.jpg',
+        processCoverImg: 'img/project--construction-junction/cj--process-cover.jpg',
+        description: 'Design system and mobile app prototype for inventory management',
+        url: './construction-junction.html',
         isPublic: true
     },
     {
@@ -336,28 +359,6 @@ const projects = [
         processCoverImg: 'img/project--kelly-strayhorn/kst--project-cover@2x.jpg',
         description: 'A new digital theater experience to help audiences connect with performers during COVID-19',
         url: './kelly-strayhorn.html',
-        isPublic: true
-    },
-    {
-        projectId: 'microsoft',
-        title: 'Microsoft',
-        mobileImg: 'img/thumbnails/microsoft-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/microsoft-thumb@2x.jpg',
-        projectCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
-        processCoverImg: 'img/project--microsoft/microsoft--project-cover.jpg',
-        description: 'A new mixed reality experience for remote creative collaboration',
-        url: './microsoft.html',
-        isPublic: true
-    },
-    {
-        projectId: 'construction-junction',
-        title: 'Construction Junction',
-        mobileImg: 'img/thumbnails/cj-thumb--mobile@2x.jpg',
-        desktopImg: 'img/thumbnails/cj-thumb@2x.jpg',
-        projectCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
-        processCoverImg: 'img/project--construction-junction/cj--project-cover.jpg',
-        description: 'Design system and mobile app prototype for inventory management',
-        url: './construction-junction.html',
         isPublic: true
     }
 ];
